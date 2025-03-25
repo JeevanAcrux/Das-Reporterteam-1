@@ -9,6 +9,7 @@
   padding:0;
   box-sizing: border-box;
 }
+
 /***css for Next-previous button starts here*****/
 .slider-control_1{
   position: fixed;
@@ -571,4 +572,25 @@ text-transform:uppercase;
     display: flex;
     flex-direction: column;
   }
+
+  .img-fluid{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .light-blue{
+    color:  #ecf0fa;
+  }
+  .table-image img{
+    height: 50px !important; 
+    width: 50px !important;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+  .middle-content{
+    vertical-align: middle;
+  }
+
 }

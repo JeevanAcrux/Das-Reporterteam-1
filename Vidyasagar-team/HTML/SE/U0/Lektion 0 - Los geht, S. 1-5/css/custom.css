@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.text-center{
+    align-items: center !important;
+}
+
+.bg-lghtblue{
+    background-color: #ecf0fa;
+}
+.bg-darkblue{
+    background-color: #a4b3d5;
+}
+.bg-imgtext{
+    background-color:  #e2e8f7;
+}
+.speaker-icon{
+    position: relative;
+}
+.speaker-icon::before {
+    /* place a video icon */
+    content: '\F484';
+    font-family: "bootstrap-icons"; /* Required for Bootstrap Icons */
+    position: absolute;
+    top: 0px;
+    left: -28px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    fill: #007bff;
+}
+.table>:not(caption)>*>* {
+    padding: 1px 3px;
+}
+.w-75{
+    width: 75%;
+}
+/* write media query for all devices */
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .w-75{
+        width: 100% !important;
+        margin: 5px 5px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .w-75{
+        width: 80%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+/* write media query for tablets */
+
+.text-red{
+    color: red;
+}
+.page-header{
+    display: flex;
+    gap: 2;
+}
+.header-number{
+    background-color: red;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    margin-right: 3px;
+}
+.main-bar{
+    display: flex;
+    gap: 4;
+}
+
+
+.main-header-txt{
+    position: relative;
+    display: inline-block; /* Adjust based on content needs */
+}
+.main-header-txt::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 62px;
+    width: 100%;
+    height: 79%;
+    background-color: rgba(255, 0, 0, 0.5);
+
+}
+.table-content-box{
+    display: flex;
+    gap : 3;
+}
+.gamining-section{
+    border: 2px dotted black; /* Dotted black border */
+    border-radius: 5px; /* Rounded corners */
+ /* Add some spacing inside */
+    
+}
+
+.bg-broun{
+    background-color: #e0e0e0;
+}
+.serial-number{
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.footer-numb{
+    padding: 5px;
+    text-align: center;
+    background-color: #c3d197;
+    border-radius: 3px;
+}
+
