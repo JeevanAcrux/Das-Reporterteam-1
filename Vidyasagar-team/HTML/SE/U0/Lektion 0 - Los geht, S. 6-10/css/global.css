@@ -56,6 +56,15 @@ text-transform:uppercase;
 }
 
 /* rajinicss */
+@font-face{
+  font-family: 'header-bold';
+  src: url(../fonts/Calibre-Bold.otf);
+}
+
+@font-face{
+  font-family: 'text-regular';
+  src: url(../fonts/Calibre-Regular.otf);
+}
 .top-bar-section-left{
   display: flex;
   gap: 10px;
@@ -118,6 +127,8 @@ justify-content: space-between;
 }
 .gray-heading{
   color: gray;
+  font-family: 'header-bold';
+  font-size: 20px;
 }
 .img-block-new{
   align-items: center;
@@ -283,3 +294,14 @@ align-items: center;
   .odd-image-view{
     height: 400px !important;
   }
+  .inner-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  .inner-right-imgg{
+    width: 100px;
+  }
+
+  
