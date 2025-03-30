@@ -952,4 +952,50 @@ text-transform:uppercase;
   border-bottom: dotted;
 }
 
+.image-block-main{
+  position: relative;
+  }
+
+  .imag-alpha {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1; 
+}
+
+.image-block-img-main {
+  width: 100%; /* Ensures the image fills the container */
+  height: 250px; /* Set a fixed height (adjust as needed) */
+  overflow: hidden; /* Hides any overflowing content */
+  display: flex; /* Centers image */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+}
+
+.image-block-img-main img {
+  width: 100%; /* Makes the image responsive */
+  height: 100%; /* Forces it to fill the container */
+  object-fit: cover !important; /* Ensures uniform height & cropping */
+}
+
+.img-rotate-2{
+  transform: rotate(2deg);
+}
+
+
 
