@@ -40,6 +40,65 @@
     font-family: text-regular;
     font-size: 20px;
   }
+  .container1 {
+            position: relative;
+            width: 600px;
+            height: 500px;
+        }
+        .item {
+            position: absolute;
+            text-align: center;
+        }
+        .item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+        .label {
+            margin-top: 5px;
+            background: #d0e6ba;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .line {
+            position: absolute;
+            width: 2px;
+            background: #999;
+        }
+        .container2 {
+            position: relative;
+            width: 90vw;
+            max-width: 600px;
+            height: 90vh;
+            max-height: 500px;
+        }
+        .item2 {
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        .item2 img {
+            width: 12vw;
+            max-width: 80px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+        .label2 {
+            margin-top: 5px;
+            background: #f4c2c2;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 1.2vw;
+            max-width: 100px;
+            text-align: center;
+        }
 </style>
 </head>
 <body>
@@ -124,16 +183,56 @@
                     color: white;">WORTGRUPPE 1</span>
                     
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="    justify-content: center;
+                display: flex
+            ;">
 
-                      <div style="text-align: center;">
-                        <img class="img-fluid" src="./images/index1-images/fruits.png" alt="">
-                      </div>
+                  <div class="container1">
+                    <div class="item" style="top: 50px; left: 250px;">
+                        <img src="./images/index1-images/noodles.png" alt="Nudeln">
+                        <div class="label">Nudeln</div>
+                    </div>
+                    <div class="item" style="top: 150px; left: 100px;">
+                        <img src="./images/index1-images/bresil.png"  alt="Brezel">
+                        <div class="label">Brezel</div>
+                    </div>
+                    <div class="item" style="top: 150px; left: 400px;">
+                        <img src="./images/index1-images/cakee.png" alt="Kuchen">
+                        <div class="label">Kuchen</div>
+                    </div>
+                    <div class="item" style="top: 250px; left: 250px;">
+                        <img src="./images/index1-images/surkart.png" alt="Sauerkraut">
+                        <div class="label">Sauerkraut</div>
+                    </div>
+                    <div class="item" style="    top: 314px;
+left: -5px;">
+                        <img src="./images/index1-images/schenizel.png" alt="Schnitzel">
+                        <div class="label">Schnitzel</div>
+                    </div>
+                    <div class="item" style="top: 350px; left: 400px;">
+                        <img src="./images/index1-images/frankee.png" alt="Frankfurter">
+                        <div class="label">Frankfurter</div>
+                    </div>
+                    <div class="item" style="top: 450px; left: 50px;">
+                        <img src="./images/index1-images/gem.png" alt="Gummibärchen">
+                        <div class="label">Gummibärchen</div>
+                    </div>
+                    <div class="item" style="    top: 412px;
+left: 582px;">
+                        <img src="./images/index1-images/bred2.png" alt="Zwieback">
+                        <div class="label">Zwieback</div>
+                    </div>
+                    <div class="item" style="top: 250px; left: 500px;">
+                        <img src="./images/index1-images/roll.png" alt="Strudel">
+                        <div class="label">Strudel</div>
+                    </div>
+                </div>
                 </div>
 
             </div>
-            <div class="row">
-                <div class="" style="display: flex;align-items: center;gap: 10px;">
+            <div class="row ">
+                <div class="" style="display: flex;align-items: center;gap: 10px;
+    margin-top: 8rem;">
                     <div><i class="fa-solid fa-volume-high"></i></div><span style="    background: 
 #df0067;font-family: header-bold;
                     padding: 4px;
@@ -141,16 +240,69 @@
                     color: white;">WORTGRUPPE 2</span>
                     
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="    justify-content: center;
+                display: flex
+            ;">
 
-                      <div style="text-align: center;">
-                        <img class="img-fluid" src="./images/index1-images/shirts1.png" alt="">
-                      </div>
+<div class="container2">
+  <!-- Clothing items -->
+  <div class="item2" style="top: 50px; left: 50%;">
+      <img src="./images/index1-images/jeans.png" alt="Jeans">
+      <div class="label2">Jeans</div>
+  </div>
+  <div class="item2" style="top: 150px; left: 20%;">
+      <img src="./images/index1-images/hoodie.png" alt="Hoodie">
+      <div class="label2">Hoodie</div>
+  </div>
+  <div class="item2" style="top: 150px; left: 80%;">
+      <img src="./images/index1-images/blazer.png" alt="Blazer">
+      <div class="label2">Blazer</div>
+  </div>
+  <div class="item2" style="top: 250px; left: 50%;">
+      <img src="./images/index1-images/bermudas.png" alt="Bermudas">
+      <div class="label2">Bermudas</div>
+  </div>
+  <div class="item2" style="top: 299px;
+    left: -13%;">
+      <img src="./images/index1-images/pullover.png" alt="Pullover">
+      <div class="label2">Pullover</div>
+  </div>
+  <div class="item2" style="    top: 316px;
+    left: 114%;">
+      <img src="./images/index1-images/blur-t.png" alt="T-Shirt">
+      <div class="label2">T-Shirt</div>
+  </div>
+  <div class="item2" style="    top: 364px;
+  left: 17%;
+">
+      <img src="./images/index1-images/leggings.png" alt="Leggings">
+      <div class="label2">Leggings</div>
+  </div>
+  <div class="item2" style="    top: 404px;
+    left: 52%;">
+      <img src="./images/index1-images/shorts.png" alt="Shorts">
+      <div class="label2">Shorts</div>
+  </div>
+  <div class="item2" style="    top: 313px;
+    left: 80%;">
+      <img src="./images/index1-images/boots.png" alt="Boots">
+      <div class="label2">Boots</div>
+  </div>
+  <div class="item2" style="    top: 140px;
+    left: 106%;">
+      <img src="./images/index1-images/cardians.png" alt="Cardigan">
+      <div class="label2">Cardigan</div>
+  </div>
+</div>
+
+
+                     
+
                 </div>
 
             </div>
           
-            <div class="section-bottom-text pt-2">
+            <div class="section-bottom-text pt-2 mt-4">
                 <div><span class="fw-bold"  style=" font-family:header-bold">6</span>ı zehn</div>
                 <div>Das Reporterteam 1</div>
 
