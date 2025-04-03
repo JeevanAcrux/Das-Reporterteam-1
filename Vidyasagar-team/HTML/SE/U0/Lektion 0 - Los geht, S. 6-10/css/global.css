@@ -104,7 +104,7 @@ text-transform:uppercase;
 position: relative;
 }
 .imag-alpha{
-  width: 30px;
+   width: 30px;
     height: 30px;
     background: #ffffff;
     text-align: center;
@@ -155,7 +155,10 @@ justify-content: space-between;
   display: inline;
  
 }
+
 }
+
+
 
 
 /* 
@@ -181,8 +184,7 @@ top right text bar
     background: gray;
 }
 .top-right-txt-bar {
-  display: flex
-;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column-reverse;

@@ -619,6 +619,11 @@ text-transform:uppercase;
     font-family: 'text-regular';
     src: url(../fonts/Calibre-Regular.otf);
   }
+
+  @font-face{
+    font-family: 'text-regular';
+    src: url(../fonts/Calibre-Regular.otf);
+  }
   .header-bold-130{
     font-size: 105px;
     line-height: 32px;
@@ -996,6 +1001,12 @@ text-transform:uppercase;
 .img-rotate-2{
   transform: rotate(2deg);
 }
+
+.btm-0{
+  position: absolute;
+  bottom: 0;
+}
+
 
 
 
