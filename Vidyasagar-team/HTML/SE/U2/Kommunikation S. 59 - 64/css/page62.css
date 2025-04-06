@@ -1,0 +1,212 @@
+.lesson-header {
+    background-color: var(--primary-purple);
+    color: var(--text-white);
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+}
+
+.lesson-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.lesson-subtitle {
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.lesson-objectives {
+    margin: 0 -15px;
+}
+
+.objective-block {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.objective-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.check-icon {
+    color: #4caf50;
+    margin-right: 8px;
+}
+
+.objective-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.objective-list li {
+    padding: 4px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.objective-list li::before {
+    content: '•';
+    margin-right: 10px;
+}
+
+/* Mini Project green box */
+.miniprojekt {
+    background-color: var(--highlight-green);
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.miniprojekt-title {
+    color: var(--text-white);
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* EU Logo section */
+.eu-logo-section {
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    height: 150px;
+}
+
+.eu-logo-figure {
+    margin: 0;
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -49px;
+    z-index: 1;
+    left: 35%;
+}
+
+.eu-logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.eu-caption {
+    font-size: 16px;
+    color: #555;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-bottom: 5px solid #134392;
+}
+
+
+.language-poster-section {
+    background-color: var(--highlight-yellow);
+    padding: 4rem;
+    position: relative;
+}
+
+.language-poster {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.language-poster-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.language-codes {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.language-codes-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+}
+
+.language-code {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.poster-caption {
+    bottom: 10px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 3rem;
+}
+
+.fa-arrow-left {
+    color: var(--highlight-green);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .class_slide {
+        padding: 20px;
+    }
+    .lesson-title {
+        font-size: 2rem;
+    }
+    
+    .objective-title {
+        font-size: 1.1rem;
+    }
+    
+    .language-codes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .miniprojekt {
+        width: 90%;
+    }
+    
+    .lesson-title {
+        font-size: 1.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .lesson-subtitle {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+    .language-poster-section {
+        /* padding: 15px; */
+    }
+    
+    .poster-caption {
+        position: static;
+        text-align: right;
+        margin-top: 15px;
+    }
+    .eu-logo-figure {
+        left: 15%;
+    }
+}
