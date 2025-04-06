@@ -1,0 +1,145 @@
+/* Chapter header and badge */
+.chapter-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 3rem;
+}
+
+/* Main container for the badge */
+.chapter-badge {
+  background-color: var(--primary-color);
+    color: white;
+    padding: 40px 20px 60px 20px;
+    position: relative;
+    width: 200px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    height: 16rem;
+
+}
+
+.badge-text {
+  font-size: 1.5rem;
+  font-weight: 700; 
+  text-transform: uppercase;
+  margin: 0; 
+}
+
+.badge-number {
+  font-size: 12rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.badge-fold {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color-dark) 0%, 
+    var(--primary-color-dark) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  border-radius: 20px 0;
+}
+
+.badge-fold::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid #ffffff;
+    border-left: 60px solid transparent;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+}
+
+/* Chapter title */
+.chapter-title h1 {
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Essential questions section */
+.essential-questions {
+    margin: 20px 0 30px;
+}
+
+.essential-questions h2 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.question-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.question-arrow {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.question-text {
+    font-size: 1.2rem;
+}
+
+.question-text p {
+    margin-bottom: 0;
+}
+
+.question-translation {
+    font-style: italic;
+}
+
+/* Main image container and speech bubble */
+.main-image-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 820px) {
+    .chapter-header {
+        flex-direction: column;
+    }
+    
+    .chapter-title h1 {
+        font-size: 3rem;
+    }
+    .class_slide {
+        padding: 0;
+    }
+    .main-content-area {
+        margin: 0;
+    }
+    
+    
+
+}

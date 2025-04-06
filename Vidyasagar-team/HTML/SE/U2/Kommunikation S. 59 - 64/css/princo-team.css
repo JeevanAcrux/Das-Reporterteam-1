@@ -1,0 +1,46 @@
+/* colors  */
+:root {
+    --primary-color: #78639b;
+    --primary-color-dark: #553f73;
+    --secondary-color: #127627;
+}
+
+
+body {
+    font-family: 'Outfit';
+}
+
+.slider-control_1 {
+    position: fixed;
+    right: 0;
+}
+.main-content-area {
+    margin: 2rem 0;
+}
+/* typhography */
+.f-600 {
+    font-weight: 600;
+}
+
+/* Page footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.page-number-left {
+    text-align: left;
+}
+
+.page-number-left .page-number  {
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+    margin-right: 10px;
+}
+
+.page-number-right {
+    text-align: right;
+}
