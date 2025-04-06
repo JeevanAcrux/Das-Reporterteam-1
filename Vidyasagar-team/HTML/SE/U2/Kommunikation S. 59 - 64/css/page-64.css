@@ -1,0 +1,413 @@
+/* Page header */
+.page-header {
+    margin-bottom: 25px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    color: var(--primary-purple);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.purple-bar {
+    flex-grow: 1;
+    height: 14px;
+    background-color: var(--primary-purple);
+}
+
+.learning-objective {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.objective-arrow {
+    color: var(--dark-green);
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Main exercise section */
+.exercise-section {
+    margin-bottom: 30px;
+}
+
+.exercise-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.exercise-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--dark-green);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.exercise-title {
+    color: var(--dark-green);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.exercise-part {
+    margin-bottom: 2px;
+}
+
+.exercise-part-two {
+    display: flex;
+    gap: 10px;
+}
+
+.exercise-part-content {
+    padding-left: 45px;
+}
+
+.geography-link {
+    font-style: italic;
+    color: var(--kultur-border);
+}
+
+.example {
+    color: var(--primary-purple);
+    margin: 20px 0;
+    padding-left: 45px;
+}
+
+/* Europe collage section */
+.europe-collage {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.audio-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+}
+
+.collage-title {
+    color: var(--primary-purple);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.collage-container .collage-item:nth-child(1),
+.collage-container .collage-item:nth-child(5) {
+    transform: rotate(350deg);
+}
+
+.collage-container .collage-item:nth-child(2),
+.collage-container .collage-item:nth-child(4),
+.collage-container .collage-item:nth-child(6) {
+    transform: rotate(10deg);
+}
+
+.collage-container .collage-item:nth-child(3) {
+    transform: rotate(350deg);
+}
+
+.collage-item {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.number-circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: var(--text-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.collage-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 1.2rem;
+}
+
+.country-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.option-group {
+    text-align: center;
+    flex: 1;
+}
+
+.option {
+    margin-bottom: 5px;
+    color: var(--primary-purple);
+}
+
+/* Completion list */
+.completion-list {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.completion-list li {
+    margin-bottom: 10px;
+}
+
+/* Group activity */
+.group-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.highlight {
+    color: var(--primary-purple);
+    font-weight: 600;
+}
+
+/* Game section */
+.game-section {
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 30px;
+    position: relative;
+    border: 2px dotted white;
+    display: flex;
+    gap: 10px;
+}
+
+.game-header {
+    background-color: var(--game-purple);
+    color: white;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 15px;
+}
+
+
+.game-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: var(--game-purple);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.game-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.game-icon {
+    background-color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #000000;
+    position: absolute;
+    right: 30px;
+}
+
+.game-instructions {
+    padding-left: 10px;
+    border-left: 1px dotted white;
+    border: 2px dotted var(--game-purple);
+    padding: 20px;
+    border-top: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.game-steps {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.game-steps li {
+    margin-bottom: 8px;
+}
+.game-steps li::marker {
+    color: var(--game-purple);
+    font-weight: 700;
+}
+
+
+
+.game-example {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    color: #005ea9;
+}
+
+.game-example p {
+    margin: 5px 0;
+}
+
+/* Vocabulary sidebar */
+.vocabulary-sidebar {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.vocab-header {
+    background-color: var(--vocab-purple);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.vocab-section {
+    background-color: var(--light-purple);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.vocab-title {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.vocab-translation {
+    color: #666;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.vocab-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.vocab-list li {
+    padding: 4px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.vocab-list li::before {
+    content: "•";
+    margin-right: 8px;
+    color: var(--vocab-purple);
+}
+
+.vocab-word {
+    font-weight: 500;
+}
+
+.vocab-phrase {
+    margin-bottom: 10px;
+}
+
+.vocab-reference {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--vocab-purple);
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .collage-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .vocabulary-sidebar {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .collage-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .country-options {
+        flex-direction: column;
+    }
+
+    .option-group {
+        margin-bottom: 10px;
+    }
+}
