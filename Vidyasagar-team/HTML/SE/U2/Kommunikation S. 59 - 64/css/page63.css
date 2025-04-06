@@ -1,0 +1,364 @@
+.page-header {
+    margin-bottom: 30px;
+}
+
+.lesson-progress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-text {
+    color: var(--primary-purple);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 16px;
+    background-color: var(--primary-purple);
+    position: relative;
+}
+
+.lesson-number {
+    color: var(--primary-purple);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Content container */
+.content-container {
+    margin-bottom: 30px;
+}
+
+/* Exercise section */
+.exercise-section {
+    margin-bottom: 30px;
+}
+
+.exercise-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.exercise-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--dark-green);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.exercise-title {
+    color: var(--dark-green);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.exercise-content {
+    padding-left: 10px;
+}
+
+.exercise-part {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.question-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.question-list li {
+    margin-bottom: 10px;
+}
+
+/* Chat container */
+.chat-container {
+    margin: 25px 0;
+    position: relative;
+}
+
+.mobile-frame {
+    background-color: #222;
+    border-radius: 30px;
+    padding: 15px 12px;
+    position: relative;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 25px;
+    background-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-messages {
+    background-color: #3d979a;
+    border-radius: 20px;
+    padding: 15px 10px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.message-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.message-left {
+    justify-content: flex-start;
+}
+
+.message-right {
+    justify-content: flex-end;
+}
+
+.message-bubble {
+    border-radius: 12px;
+    padding: 10px;
+    max-width: 80%;
+    position: relative;
+}
+
+.laura-bubble {
+    background-color: var(--speech-laura);
+    border-top-right-radius: 0;
+}
+
+.jonas-bubble {
+    background-color: var(--speech-jonas);
+    border-top-left-radius: 0;
+}
+
+.emir-bubble {
+    background-color: var(--speech-emir);
+    border-top-left-radius: 0;
+}
+
+.message-sender {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.message-text {
+    margin-bottom: 4px;
+}
+
+.message-time {
+    font-size: 0.8rem;
+    color: #777;
+    text-align: right;
+}
+
+.girl-image-container {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+
+.girl-image {
+    width: 100%;
+    height: auto;
+}
+
+.map-hint {
+    position: absolute;
+    top: 35px;
+    left: 355px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Statements section */
+.statements {
+    margin-top: 40px;
+}
+
+.statement-list {
+    padding-left: 20px;
+}
+
+.statement-list li {
+    margin-bottom: 8px;
+}
+
+.statement-list li::marker {
+    font-weight: bold;
+}
+
+/* Culture sidebar */
+.culture-sidebar {
+    border: 2px dotted var(--kultur-border);
+    border-radius: 10px;
+    padding: 2px;
+    background-color: var(--highlight-yellow-light);
+    position: relative;
+}
+
+.kultur-to-header {
+    position: absolute;
+    top: -1.5rem;
+    left: 35%;
+}
+
+.kultur-to-header .kultureller-header {
+    margin: auto;
+}
+
+.kultur-header {
+    background-color: #fff;
+    color: var(--kultur-border);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.kultur-content {
+    padding: 15px;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.audio-icon {
+    top: 15px;
+    left: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.kultur-content p {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.kultur-content p:first-of-type {
+    font-size: 1.1rem;
+}
+
+.kultureller-header {
+    width: fit-content;
+    background: #ffffff;
+    position: relative;
+    padding: 10px 20px;
+    border: 2px solid var(--kultur-border);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.kultureller-header {
+    position: relative;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid var(--kultur-border);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+}
+
+.kultureller-header:before,
+.kultureller-header:after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.kultureller-header:before {
+    left: 25px;
+    bottom: -25px;
+    border: 12px solid;
+    border-color: var(--kultur-border) transparent transparent var(--kultur-border);
+}
+
+.kultureller-header:after {
+    left: 26px;
+    bottom: -23px;
+    border: 16px solid;
+    border-color: #fff transparent transparent #fff;
+}
+
+.kultureller-vergleich h3 {
+    color: var(--kultur-border);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.kultureller-vergleich p {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.source-reference {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.fa-arrow-up {
+    color: var(--primary-green);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .class_slide {
+        padding: 20px;
+    }
+
+    .map-hint {
+        position: static;
+    }
+
+    .girl-image-container {
+        right: -80px;
+        width: 150px;
+        height: 200px;
+    }
+
+    .culture-sidebar {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .girl-image-container {
+        display: none;
+    }
+
+    .mobile-frame {
+        max-width: 100%;
+    }
+
+    .chat-messages {
+        height: 400px;
+    }
+}
