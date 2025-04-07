@@ -1,0 +1,181 @@
+/* Page title styles */
+.page-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.title-underline {
+    background-color: var(--text-light);
+    height: 13px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+/* Activity header styles */
+.activity-container {
+    margin-bottom: 30px;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.activity-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--text-light);
+    color: var(--text-white);
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.activity-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 18px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.activity-instructions {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.activity-instructions p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Weather grid and cards */
+.weather-grid {
+    margin-left: 50px;
+    margin-right: 0;
+    gap: 25px 0;
+}
+
+.weather-card {
+    background-color: var(--background-light-gray);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    height: 100%;
+    min-height: 80px;
+}
+
+.top-weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-light-yellow);
+    border-radius: 10px;
+}
+
+.top-weather-card .weather-header {
+    color: #e30614;
+    font-size: 2rem;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.card-cold {
+    background-color: #cce3f3;
+}
+
+.top-weather-card .weather-icon {
+    position: relative;
+}
+.top-weather-card .weather-icon img {
+    width: 70px;
+
+}
+
+.weather-header {
+    color: #e74c3c; /* Warm red */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cold-header {
+    color: #3498db; /* Cool blue */
+}
+
+.temperature-display {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.temperature {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.fahrenheit {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.weather-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.weather-icon-img {
+    width: 40px;
+    height: auto;
+}
+
+.thermometer-icon {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    z-index: 1;
+}
+
+.thermometer-img {
+    width: 35px;
+    height: auto;
+}
+
+.weather-fig {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.weather-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weather-grid {
+        margin-left: 0;
+    }
+    
+    .activity-instructions {
+        margin-left: 15px;
+    }
+    
+    .weather-card {
+        margin-bottom: 15px;
+    }
+}
