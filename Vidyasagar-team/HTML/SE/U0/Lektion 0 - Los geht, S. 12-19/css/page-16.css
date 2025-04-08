@@ -276,11 +276,3 @@
     }
 }
 
-/* Setting lang attributes */
-[lang="de"] {
-    font-family: 'outfit', sans-serif;
-}
-
-[lang="en"] {
-    font-style: italic;
-}

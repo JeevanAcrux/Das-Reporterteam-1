@@ -28,6 +28,16 @@
     --background-light-gray: #ededed;
 }
 
+/* Setting lang attributes */
+[lang="de"] {
+    font-family: 'outfit', sans-serif;
+}
+
+[lang="en"] {
+    font-style: italic;
+}
+
+
 
 body {
     font-family: 'Outfit' !important;
