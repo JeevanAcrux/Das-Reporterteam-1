@@ -1,0 +1,319 @@
+/* Main content layout */
+.content-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.game-section {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Game section */
+.game-section {
+    background-color: #9c27b0;
+    border-radius: 8px;
+    padding: 20px;
+    padding-left: 60px;
+    color: white;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-number {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #9c27b0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.game-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.game-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.game-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-icon i {
+    font-size: 30px;
+    color: #9c27b0;
+}
+
+.kulhub-icon {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.game-instructions {
+    padding-left: 25px;
+}
+
+.game-instructions li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Vocabulary section */
+.vocabulary-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vocabulary-title {
+    background-color: #9c27b0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.preference-heading {
+    color: #9c27b0;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Pronunciation section */
+.pronunciation-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pronunciation-header {
+    background-color: #d32f2f;
+    margin: -20px -20px 20px -20px;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pronunciation-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mouth-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.mouth-img {
+    width: 30px;
+    height: 30px;
+}
+
+.speech-text {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+.pronunciation-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.pronunciation-tutorial-icon {
+    background-color: white;
+    color: #d32f2f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pronunciation-tutorial-icon i {
+    font-size: 20px;
+}
+
+.tutorial-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 0.6rem;
+    bottom: -20px;
+    color: white;
+}
+
+/* Pronunciation content */
+.pronunciation-content {
+    padding: 0 10px;
+}
+
+.pronunciation-explanation {
+    margin-bottom: 20px;
+}
+
+.explanation-arrow {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.example-phrase {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.phrase {
+    color: #d32f2f;
+    font-weight: 500;
+}
+
+.r-rules {
+    padding-left: 20px;
+}
+
+.r-rules li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.example {
+    color: #d32f2f;
+    font-style: italic;
+}
+
+/* Exercise sections */
+.exercise-section {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-number {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.audio-icon {
+    position: absolute;
+    left: 15px;
+    top: 50px;
+    color: #d32f2f;
+    font-size: 1.2rem;
+}
+
+.exercise-instruction {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.exercise-content {
+    margin-top: 10px;
+}
+
+.pronounce-words {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.word-row {
+    display: flex;
+    gap: 30px;
+}
+
+.word-row p {
+    margin: 0;
+    flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+    }
+    
+    .game-section {
+        flex: auto;
+    }
+    
+    .pronunciation-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .pronunciation-tutorial-icon {
+        margin-top: 10px;
+    }
+    
+    .word-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

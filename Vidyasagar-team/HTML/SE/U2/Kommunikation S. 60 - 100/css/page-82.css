@@ -1,0 +1,437 @@
+.main-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.vocab-sidebar {
+    width: 250px;
+    margin-left: 20px;
+}
+
+/* Page title styles */
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--purple-color);
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.title-purple-bar {
+    display: inline-block;
+    height: 10px;
+    background-color: var(--purple-color);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: -500px;
+    transform: translateY(-50%);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Content layout */
+.content-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* Section styles */
+.section-container {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.green-section .section-number {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.purple-section .section-number {
+    background-color: var(--purple-color);
+    color: white;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--green-color);
+    text-transform: uppercase;
+}
+
+.purple-section .section-title {
+    color: var(--purple-color);
+}
+
+.section-content {
+    flex: 1;
+}
+
+/* Activity styles */
+.activity-instruction {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.activity-instruction strong {
+    font-weight: 700;
+}
+
+.audio-icon {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.question-list, .activity-steps {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.question-list li, .activity-steps li {
+    margin-bottom: 10px;
+}
+
+.german-text {
+    color: var(--purple-color);
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.group-icon {
+    margin-right: 8px;
+}
+
+/* Infographic styles */
+.infographic-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.infographic-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.infographic-main-stat {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.highlight-red {
+    color: var(--red-color);
+    font-weight: 700;
+}
+
+.infographic-note {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.pet-stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.pet-stat-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.stat-number {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pet-type {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.pet-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cat-icon {
+    background-image: url('../images/cat-icon.png');
+}
+
+.dog-icon {
+    background-image: url('../images/dog-icon.png');
+}
+
+.rabbit-icon {
+    background-image: url('../images/rabbit-icon.png');
+}
+
+.bird-icon {
+    background-image: url('../images/bird-icon.png');
+}
+
+.fish-icon {
+    background-image: url('../images/fish-icon.png');
+}
+
+.turtle-icon {
+    background-image: url('../images/turtle-icon.png');
+}
+
+.infographic-source {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Culture section styles */
+.kultur-section {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.kultur-title {
+    display: inline-block;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.tierschutzbund-container {
+    display: flex;
+    border: 1px dotted #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.tierschutzbund-content {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.audio-label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tierschutzbund-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.tierschutzbund-image {
+    width: 200px;
+    text-align: center;
+}
+
+.tierschutzbund-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.image-source {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.cultural-comparison {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.compare-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.compare-question {
+    font-size: 0.95rem;
+}
+
+/* Vocabulary section styles */
+.vocab-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.vocab-title {
+    background-color: var(--purple-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vocab-category {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--purple-color);
+    margin-bottom: 10px;
+}
+
+.vocab-translation {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.vocab-list {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.vocab-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.vocab-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--purple-color);
+}
+
+.vocab-word {
+    font-weight: 600;
+}
+
+.vocab-alt {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 3px;
+}
+
+.vocab-page-reference {
+    font-size: 0.8rem;
+    text-align: right;
+    color: var(--purple-color);
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+/* Strategy section styles */
+.strategy-section {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.strategy-title {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strategy-subtitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.strategy-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+    }
+    
+    .main-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .vocab-sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .tierschutzbund-container {
+        flex-direction: column;
+    }
+    
+    .tierschutzbund-content {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .tierschutzbund-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .pet-stat-item {
+        width: calc(50% - 10px);
+    }
+}

@@ -1,0 +1,314 @@
+/* Lektion header - keeping consistent with previous pages */
+.lektion-header {
+    background-color: #008799;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    position: relative;
+    border-bottom-right-radius: 20px;
+}
+
+.lektion-header h1 {
+    margin: 0;
+}
+
+.lektion-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+/* Vocabulary section */
+.vocabulary-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vocabulary-title {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vocabulary-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.audio-icon {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #2980b9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.translation {
+    font-weight: normal;
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 0.9em;
+}
+
+/* Map Container */
+.map-container {
+    background-color: #e8f4fc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.europe-map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.map-label {
+    position: absolute;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.map-label .country-name {
+    font-weight: 600;
+}
+
+.map-label .country-translation {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Map label positions - these would need adjustment based on actual map image */
+.belgium {
+    top: 20%;
+    left: 10%;
+}
+
+.luxembourg {
+    top: 30%;
+    left: 15%;
+}
+
+.germany {
+    top: 25%;
+    left: 35%;
+}
+
+.austria {
+    top: 40%;
+    right: 20%;
+}
+
+.switzerland {
+    top: 45%;
+    left: 25%;
+}
+
+.liechtenstein {
+    top: 45%;
+    left: 30%;
+}
+
+.italy {
+    bottom: 20%;
+    right: 25%;
+}
+
+.map-legend {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+}
+
+.mother-tongue {
+    background-color: #ffeb3b;
+}
+
+.official-language {
+    background-color: #8bc34a;
+}
+
+.legend-text {
+    font-size: 0.75rem;
+}
+
+/* Languages title */
+.languages-title {
+    background-color: #3498db;
+    margin-top: 30px;
+}
+
+.languages-title .audio-icon {
+    color: #3498db;
+}
+
+/* Language section */
+.language-section {
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.language-question {
+    margin-bottom: 15px;
+}
+
+.question {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.language-answer {
+    margin-bottom: 20px;
+}
+
+.answer {
+    margin-bottom: 5px;
+}
+
+/* Proficiency grid */
+.proficiency-grid {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.proficiency-item {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.proficiency-level {
+    display: flex;
+    flex-direction: column;
+}
+
+.proficiency-level li {
+    font-weight: 600;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+/* Languages grid */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.language-item {
+    padding: 5px;
+}
+
+.language-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-name li {
+    font-weight: 500;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+.school-language {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Origin title */
+.origin-title {
+    background-color: #2c3e50;
+    margin-top: 30px;
+}
+
+.origin-title .audio-icon {
+    color: #2c3e50;
+}
+
+/* Origin section */
+.origin-section {
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.origin-dialog p {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .languages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .proficiency-grid {
+        flex-direction: column;
+    }
+    
+    .proficiency-item {
+        margin-bottom: 10px;
+    }
+    
+    .europe-map {
+        height: 300px;
+    }
+}

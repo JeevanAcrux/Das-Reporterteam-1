@@ -1,0 +1,300 @@
+/* Magazine wrapper with grass background */
+.magazine-wrapper {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    background-image: url('../images/grass-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.magazine-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    margin: 20px;
+    z-index: 0;
+}
+
+/* Magazine header styles */
+.magazine-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.magazine-title {
+    background-color: var(--red-color);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 8px 20px;
+    display: inline-block;
+    font-family: 'outfit-bl', sans-serif;
+}
+
+.magazine-subject {
+    font-size: 0.85rem;
+    border: 1px solid #777;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #555;
+    background-color: white;
+}
+
+/* "I can" statement styles */
+.i-can-statement {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.i-can-statement .fa-arrow-right {
+    color: var(--red-color);
+    margin-right: 5px;
+}
+
+/* Divider styles */
+.divider {
+    position: relative;
+    z-index: 1;
+    border-top: 1px dotted #999;
+    margin: 15px 0;
+}
+
+/* Article content styles */
+.article-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+}
+
+.article-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: 'outfit-bl', sans-serif;
+    line-height: 1.1;
+}
+
+/* Author info styles */
+.author-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.author-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details {
+    font-size: 0.9rem;
+}
+
+.author-name {
+    color: var(--red-color);
+    font-weight: 600;
+}
+
+/* Introduction paragraph styles */
+.intro-paragraph {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.audio-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.intro-paragraph p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Left image styles - cat on couch */
+.left-image {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Article section styles */
+.article-section {
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.article-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Family image styles */
+.family-image {
+    border: 4px solid var(--red-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.family-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footprints styles */
+.footprints {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-image: url('../images/footprints.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    opacity: 0.7;
+}
+
+.footprints-left {
+    bottom: -100px;
+    right: -30px;
+    transform: rotate(45deg);
+}
+
+.footprints-right {
+    bottom: -50px;
+    right: 50px;
+    transform: rotate(-15deg);
+}
+
+/* Exercise sections styles */
+.exercises-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.exercise {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.green-exercise .exercise-number {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.exercise-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.instruction {
+    margin-bottom: 15px;
+}
+
+.instruction strong {
+    font-weight: 700;
+}
+
+.word-list {
+    padding-left: 25px;
+    margin-bottom: 0;
+}
+
+.word-list li {
+    margin-bottom: 5px;
+}
+
+.word-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .magazine-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .magazine-subject {
+        margin-top: 10px;
+    }
+    
+    .article-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .exercises-container {
+        flex-direction: column;
+    }
+    
+    .exercise {
+        width: 100%;
+    }
+    
+    .left-image {
+        float: none;
+        width: 60%;
+        margin: 0 auto 20px;
+    }
+    
+    .article-title {
+        font-size: 2.2rem;
+    }
+}

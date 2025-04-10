@@ -1,0 +1,261 @@
+
+
+/* Page header styles */
+.page-title {
+    color: var(--primary-purple);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.purple-bar {
+    background-color: var(--primary-purple);
+    height: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.learning-objective {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.arrow-icon {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* Exercise section styles */
+.exercise-section {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+}
+
+.exercise-number {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exercise-number span {
+    color: white;
+    font-weight: 700;
+}
+
+.exercise-title {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.exercise-item {
+    margin-bottom: 20px;
+}
+
+.exercise-instruction {
+    margin-bottom: 15px;
+}
+
+.audio-icon {
+    margin-right: 8px;
+    color: var(--dark-gray);
+}
+
+/* Hobby buttons styles */
+.hobby-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.hobby-btn {
+    background-color: var(--light-blue);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.hobby-btn:hover {
+    background-color: var(--dark-blue);
+}
+
+/* Photo grid styles */
+.photo-grid {
+    margin-bottom: 25px;
+}
+
+.photo-grid .row {
+    margin-bottom: 15px;
+}
+
+.photo-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.photo-number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-purple);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.activity-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Example answer styles */
+.example-answer {
+    font-style: italic;
+    color: var(--primary-blue);
+    margin-left: 20px;
+}
+
+/* Answer options styles */
+.answer-options {
+    margin-left: 20px;
+}
+
+.highlight {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* Vocabulary section styles */
+.vocab-section {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.vocab-header {
+    background-color: var(--primary-purple);
+    padding: 10px 15px;
+}
+
+.vocab-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.vocab-block {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.vocab-block h4 {
+    color: var(--primary-purple);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.vocab-block h4 span {
+    font-style: italic;
+    font-weight: normal;
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.vocab-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.vocab-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.vocab-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-purple);
+}
+
+.vocab-list li p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Expressions styles */
+.expressions p {
+    margin-bottom: 10px;
+}
+
+.heart-icon, .dislike-icon {
+    display: inline-block;
+    width: 40px;
+    margin-right: 8px;
+}
+
+/* Page reference styles */
+.page-reference {
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.page-reference span {
+    font-weight: 600;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .vocab-section {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hobby-buttons {
+        flex-direction: column;
+    }
+    
+    .hobby-btn {
+        width: 100%;
+    }
+}

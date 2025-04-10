@@ -1,0 +1,174 @@
+/* Grammar header */
+.grammar-header {
+    background-color: #008799;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Section styling */
+.grammar-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    background-color: #008799;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.verb-highlight {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.grammar-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00647f;
+    background-image: url('../images/grammar-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+/* Explanation boxes */
+.explanation-box {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #008799;
+}
+
+.explanation-box h3 {
+    color: #008799;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.explanation-box ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.explanation-box li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Conjugation table */
+.conjugation-table {
+    margin-bottom: 25px;
+}
+
+.conjugation-table h3 {
+    color: #008799;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.conjugation-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.conjugation-table th {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.conjugation-table td {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.highlight {
+    color: #008799;
+    font-weight: bold;
+}
+
+/* Exercise sections */
+.exercise-section {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.exercise-number {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #008799;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.exercise-instruction {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #404040;
+}
+
+.exercise-content {
+    margin-left: 10px;
+}
+
+.option {
+    font-weight: 600;
+    padding: 0 3px;
+}
+
+/* Profile card for exercise 13 */
+.profile-card {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.sample-answer {
+    flex: 1;
+    color: #008799;
+    border-left: 2px dashed #ccc;
+    padding-left: 20px;
+}
