@@ -15,7 +15,10 @@
     flex-grow: 1;
     margin-left: 15px;
 }
-
+.icon-title-below {
+    padding-left: 10px;
+    width: 41px;
+}
 /* Activity header styles */
 .activity-container {
     margin-bottom: 30px;
