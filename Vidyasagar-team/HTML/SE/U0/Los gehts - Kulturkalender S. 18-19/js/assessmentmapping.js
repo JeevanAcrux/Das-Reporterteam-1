@@ -1,1 +1,1 @@
-var assessmentMap = [[245567]];
+var assessmentMap = [[245567, 245584]];
