@@ -1,0 +1,368 @@
+/* General layout */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+/* Header with KULHub */
+.page-header {
+    position: relative;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: var(--primary-blue);
+    z-index: 1;
+}
+
+.curve-left, .curve-right {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.curve-left {
+    left: 220px;
+    transform: translateX(-50%);
+}
+
+.curve-right {
+    right: 220px;
+    transform: translateX(50%);
+}
+
+.kul-hub-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    z-index: 3;
+}
+
+.kul-hub-logo {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logo-text {
+    color: #333;
+}
+
+.logo-text-kul {
+    color: #333;
+    font-weight: 700;
+}
+
+.logo-text-hub {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.tutorial-badges {
+    display: flex;
+    gap: 15px;
+}
+
+.tutorial-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.tutorial-badge i {
+    font-size: 16px;
+    color: var(--primary-blue);
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.section-title-right {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* Grammar section title */
+.grammar-section-title {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.highlight-yellow {
+    color: var(--highlight-yellow);
+    font-weight: 700;
+}
+
+.highlight-verb {
+    color: var(--highlight-blue);
+    font-weight: 700;
+}
+
+.highlight-vowel {
+    color: var(--highlight-red);
+    font-weight: 700;
+}
+
+.highlight-forms {
+    color: var(--highlight-blue);
+    font-weight: 700;
+}
+
+.regular-vowel {
+    color: var(--primary-blue);
+    font-weight: normal;
+}
+
+.grammar-tutorial-badge {
+    background-color: #fff;
+    color: var(--primary-blue);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.grammar-tutorial-badge i {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+/* Grammar content */
+.grammar-content {
+    background-color: var(--light-gray);
+    padding: 20px;
+}
+
+.grammar-explanation {
+    margin-bottom: 20px;
+}
+
+.explanation-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.grammar-explanation ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.grammar-explanation li {
+    margin-bottom: 15px;
+}
+
+/* Verb tables */
+.verb-table-container {
+    margin: 15px 0;
+}
+
+.verb-table {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+.verb-header {
+    background-color: #666;
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verb-infinitive {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.verb-translation {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.verb-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.verb-table td {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+}
+
+.verb-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Speech bubble and student image */
+.speech-bubble-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 30px 0;
+    position: relative;
+}
+
+.speech-bubble {
+    background-color: #fff;
+    border: 2px solid var(--highlight-red);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    max-width: 200px;
+    margin-top: 40px;
+    margin-right: -70px;
+    z-index: 2;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-right: 2px solid var(--highlight-red);
+    border-bottom: 2px solid var(--highlight-red);
+    transform: rotate(-45deg);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.speech-bubble p {
+    margin: 0;
+    color: var(--highlight-blue);
+    font-weight: 500;
+}
+
+.student-image {
+    flex: 0 0 auto;
+    z-index: 1;
+}
+
+.student-img {
+    width: 240px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .curve-left {
+        left: 150px;
+    }
+    
+    .curve-right {
+        right: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kul-hub-container {
+        padding: 8px 15px;
+    }
+    
+    .speech-bubble-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .speech-bubble {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .speech-bubble:after {
+        bottom: -15px;
+        right: 50%;
+        transform: translateX(50%) rotate(45deg);
+    }
+    
+    .curve-left, .curve-right {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .grammar-tutorial-badge {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        right: 10px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .content-container {
+        padding: 0 10px;
+    }
+    
+    .grammar-content {
+        padding: 15px;
+    }
+    
+    .kul-hub-container {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .tutorial-badges {
+        display: none;
+    }
+}

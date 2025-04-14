@@ -1,0 +1,248 @@
+/* Page header styles */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.title-line {
+    height: 13px;
+    background-color: var(--text-light);
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.page-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 28px;
+    color: var(--text-dark);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.workbook-info {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* Vocabulary container and sections */
+.vocabulary-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.vocabulary-section {
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.people-section {
+    flex: 1;
+    background-color: #e6eaf4; /* Light blue for people */
+}
+
+.tech-section {
+    flex: 1;
+    background-color: #e6f4e8; /* Light green for tech */
+}
+
+.classroom-section {
+    flex: 1;
+    background-color: #e6f0f4; /* Light teal for classroom */
+}
+
+.audio-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.audio-icon {
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+/* School items grid */
+.school-items-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.school-item {
+    margin-bottom: 10px;
+}
+
+.item-image-container {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.item-image {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.item-name {
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 500;
+    border-radius: 0 0 5px 5px;
+}
+
+.teacher-label {
+    background-color: #1a4088; /* Dark blue for teachers/students */
+}
+
+.tech-label {
+    background-color: #2c7d32; /* Dark green for technology */
+}
+
+.classroom-label {
+    background-color: #217380; /* Teal for classroom items */
+}
+
+/* Activity container styles */
+.activity-container {
+    background-color: #f7f7f7;
+    border: 2px dotted #ccc;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #777270;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 20px;
+}
+
+.activity-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--text-light);
+    color: var(--text-white);
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.activity-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 18px;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.game-icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text-light);
+}
+
+.game-users-icon {
+    font-size: 20px;
+    color: var(--text-dark);
+}
+
+/* Game instructions styles */
+.game-instructions {
+    display: flex;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.instruction-list {
+    flex: 3;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.instruction-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.game-image-container {
+    flex: 2;
+}
+
+.game-image-fig {
+    margin: 0;
+    padding: 0;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .vocabulary-container {
+        flex-direction: column;
+    }
+    
+    .game-instructions {
+        flex-direction: column;
+    }
+    
+    .game-image-container {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .school-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .people-section .school-items-grid,
+    .classroom-section .school-items-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-section .school-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

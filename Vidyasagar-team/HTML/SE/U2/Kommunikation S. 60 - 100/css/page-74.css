@@ -1,0 +1,185 @@
+/* Vocabulary header */
+.vocabulary-header {
+    background-color: #a94baf;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Vocabulary section */
+.vocabulary-section {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vocabulary-title {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vocabulary-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.audio-icon {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #27ae60;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.translation {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Country groups */
+.country-group {
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+.group-label {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Countries grid */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.countries-grid.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.country-item {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.country-name {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.country-flag {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Flag backgrounds */
+.australia {
+    background-image: url('../images/flags/australia.png');
+}
+
+.belgium {
+    background-image: url('../images/flags/belgium.png');
+}
+
+.germany {
+    background-image: url('../images/flags/germany.png');
+}
+
+.france {
+    background-image: url('../images/flags/france.png');
+}
+
+.uk {
+    background-image: url('../images/flags/uk.png');
+}
+
+.italy {
+    background-image: url('../images/flags/italy.png');
+}
+
+.japan {
+    background-image: url('../images/flags/japan.png');
+}
+
+.canada {
+    background-image: url('../images/flags/canada.png');
+}
+
+.liechtenstein {
+    background-image: url('../images/flags/liechtenstein.png');
+}
+
+.luxembourg {
+    background-image: url('../images/flags/luxembourg.png');
+}
+
+.austria {
+    background-image: url('../images/flags/austria.png');
+}
+
+.sweden {
+    background-image: url('../images/flags/sweden.png');
+}
+
+.switzerland {
+    background-image: url('../images/flags/switzerland.png');
+}
+
+.turkey {
+    background-image: url('../images/flags/turkey.png');
+}
+
+.netherlands {
+    background-image: url('../images/flags/netherlands.png');
+}
+
+.usa {
+    background-image: url('../images/flags/usa.png');
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .countries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .countries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .countries-grid.two-columns {
+        grid-template-columns: 1fr;
+    }
+}

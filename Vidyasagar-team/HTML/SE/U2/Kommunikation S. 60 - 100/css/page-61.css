@@ -1,0 +1,332 @@
+/* General page styles */
+.main-content-area {
+    padding: 20px 0;
+}
+
+/* Lektion section styles */
+.lektion-sections {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.lektion-card {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    min-height: 240px;
+}
+
+.lektion-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.lektion-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.miniprojekt-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.miniprojekt-desc {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Abschlussprojekt card styles */
+.abschluss-card {
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.abschluss-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.abschluss-title span {
+    display: block;
+}
+
+.dotted-line {
+    border-top: 3px dotted white;
+    margin: 10px 0 15px;
+    width: 80%;
+}
+
+.abschluss-desc {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.fold-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color-dark) 0%, 
+        var(--primary-color-dark) 50%,
+        transparent 50%,
+        transparent 100%
+    );
+    border-radius: 20px 0;
+}
+
+.fold-corner::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid #ffffff;
+    border-left: 60px solid transparent;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+}
+
+.paper-plane {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    transform: rotate(30deg);
+}
+
+.plane-img {
+    width: 50px;
+    height: auto;
+}
+
+/* Dotted path connecting the cards */
+.dotted-path-container {
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    object-fit: fill;
+}
+
+.dotted-path {
+    width: 100%;
+    height: 40px;
+}
+
+/* Main content section styles */
+.landscape-image-container {
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.image-zoom-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.zoom-slider {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #888;
+    border-radius: 5px;
+    position: relative;
+}
+
+.zoom-slider:after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.zoom-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Content info card */
+.content-info-card {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.travel-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.city-highlight {
+    font-weight: 900;
+}
+
+/* Map container */
+.map-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.germany-map {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Info boxes */
+.info-box {
+    background-color: white;
+    color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100%;
+    border: 2px dashed #ddd;
+}
+
+.info-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.brainstorming-box .info-title {
+    color: var(--dark-gray);
+}
+
+.interesting-box .info-title {
+    color: var(--dark-gray);
+}
+
+.info-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.info-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Activity section */
+.activity-section {
+    background-color: var(--primary-color-dark);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.activity-number {
+    background-color: #4CAF50;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.activity-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.activity-instruction {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.group-icon {
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+.activity-questions {
+    margin-bottom: 0;
+}
+
+.activity-questions li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.activity-questions li::marker {
+    font-weight: 700;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .lektion-sections {
+        margin-bottom: 0px;
+    }
+    .lektion-card {
+        margin-bottom: 20px;
+        min-height: auto;
+        height: auto;
+    }
+    .info-box {
+        height: auto;
+    }
+    
+    .dotted-path-container {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .abschluss-card {
+        margin-bottom: 30px;
+    }
+    
+    .content-info-card {
+        margin-top: 20px;
+    }
+}

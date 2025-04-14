@@ -1,0 +1,337 @@
+/* General layout */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+/* Grammar header */
+.grammar-header {
+    background-color: var(--primary-blue);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 8% 50%);
+}
+
+.grammar-main-title {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    font-family: outfit-bl, sans-serif;
+}
+
+/* Exercise sections */
+.exercise-section {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.exercise-number {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.exercise-instruction {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.exercise-instruction-group {
+    margin-bottom: 20px;
+}
+
+.pair-instruction {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pair-instruction i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+/* Exercise items */
+.exercise-items {
+    padding-left: 50px;
+}
+
+.exercise-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.exercise-item {
+    flex: 1;
+    display: flex;
+}
+
+.item-letter {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.item-content {
+    flex: 1;
+}
+
+/* Option pairs */
+.option-pair {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.option {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Verb options for exercise 19 */
+.verb-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.verb-option {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.exercise-fillins .item-content {
+    display: flex;
+    align-items: center;
+}
+
+.selected-option {
+    color: var(--accent-blue);
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+/* Verb forms for exercise 20 */
+.verb-form {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.verb-infinitive {
+    color: #666;
+    font-style: italic;
+}
+
+/* Dice game for exercise 21 */
+.verb-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.verb-button {
+    background-color: var(--secondary-blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.dice-game {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dice-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.dice {
+    position: relative;
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.red-dice {
+    background-color: #f4d0d0;
+    border: 1px solid #e6b0b0;
+}
+
+.green-dice {
+    background-color: #d0e8d0;
+    border: 1px solid #b0d0b0;
+}
+
+.dice-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.dice-label {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.skateboard-image {
+    flex: 1;
+    text-align: right;
+}
+
+.skateboarder {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Example sentence at the bottom */
+.example-sentence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.dice-roll {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.example-dice {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-dice-small {
+    background-color: #f4d0d0;
+    border: 1px solid #e6b0b0;
+}
+
+.green-dice-small {
+    background-color: #d0e8d0;
+    border: 1px solid #b0d0b0;
+}
+
+.roll-arrow {
+    color: var(--primary-blue);
+}
+
+.roll-result {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.sentence-result {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sentence-arrow {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+}
+
+.final-sentence {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .exercise-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .dice-game {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dice-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .skateboard-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .example-sentence {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .grammar-main-title {
+        font-size: 24px;
+    }
+    
+    .content-container {
+        padding: 0 10px;
+    }
+    
+    .exercise-items {
+        padding-left: 30px;
+    }
+    
+    .verb-options, .verb-buttons {
+        gap: 5px;
+    }
+    
+    .verb-option, .verb-button {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .dice {
+        width: 100px;
+        height: 60px;
+    }
+}

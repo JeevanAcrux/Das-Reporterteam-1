@@ -1,0 +1,146 @@
+/* colors for page 18 */
+:root {
+    --january-color: #2e3192;
+    --february-color: #3e8c98;
+    --march-color: #5ba395;
+    --april-color: #4295d1;
+    --may-color: #4a8b39;
+    --june-color: #3e6f8f;
+    --dark-gray: #666666;
+    --light-gray: #f0f0f0;
+}
+
+.calendar-title {
+    color: var(--dark-gray);
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 3.2rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.month-header {
+    padding: 0.5rem 1rem;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.january-section .month-header {
+    background-color: var(--january-color);
+}
+
+.february-section .month-header {
+    background-color: var(--february-color);
+}
+
+.march-section .month-header {
+    background-color: var(--march-color);
+}
+
+.april-section .month-header {
+    background-color: var(--april-color);
+}
+
+.may-section .month-header {
+    background-color: var(--may-color);
+}
+
+.june-section .month-header {
+    background-color: var(--june-color);
+}
+
+.month-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 1.8rem;
+}
+
+.month-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+
+.calendar-date {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.event-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.country-flag {
+    height: 16px;
+    margin-left: 5px;
+}
+
+.event-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.event-image {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.april-call-out {
+    position: relative;
+    width: fit-content;
+    color: var(--april-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    border: 2px solid var(--april-color);
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.april-call-out:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--april-color);
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .calendar-title {
+        font-size: 2.5rem;
+    }
+    
+    .event-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Paper texture and binding style */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-image: url('../images/notebook-binding.png');
+    background-repeat: repeat-x;
+    z-index: 10;
+}
