@@ -1,0 +1,45 @@
+.das-rep-1-mbcontent-r-bck-ol-5-u3a li {
+    counter-increment: bck-li-counter;
+    font-family: 'outfit-r';
+    padding-left: 15px;
+    position: relative;
+    z-index: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+.das-rep-1-mbcontent-r-bck-ol-10-grami li {
+    counter-increment: bck-li-counter;
+    padding-left: 17px;
+    position: relative;
+    z-index: 0;
+    text-indent: 0px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 8px;
+}
+.das-rep-1-mbcontent-r-bck-ol-drkRed li {
+    counter-increment: bck-li-counter;
+    padding-left: 15px;
+    position: relative;
+    z-index: 0;
+    text-indent: 0px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 11px;
+}
+
+.das-rep-1-mbcontent-r-bck-ol-5-u3-ipa li {
+    counter-increment: bck-li-counter;
+    font-family: 'outfit-b';
+    padding-left: 15px;
+    position: relative;
+    z-index: 0;
+    color: #797676;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
