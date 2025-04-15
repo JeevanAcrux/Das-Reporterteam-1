@@ -92,7 +92,7 @@ strong {
     border-left: 2px solid #000;
     margin-left: 10px;
 }
-
+/* page-18 css style start */
 /* colors for page 18 */
 :root {
     --january-color: #2e3192;
@@ -105,7 +105,7 @@ strong {
     --light-gray: #f0f0f0;
 }
 
-.calendar-title {
+.page18-calendar-title {
     color: var(--dark-gray);
     font-family: 'outfit-bl', sans-serif;
     font-size: 3.2rem;
@@ -114,43 +114,43 @@ strong {
     position: relative;
 }
 
-.month-header {
+.page18-month-header {
     padding: 0.5rem 1rem;
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.january-section .month-header {
+.page18-january-section .page18-month-header {
     background-color: var(--january-color);
 }
 
-.february-section .month-header {
+.page18-february-section .page18-month-header {
     background-color: var(--february-color);
 }
 
-.march-section .month-header {
+.page18-march-section .page18-month-header {
     background-color: var(--march-color);
 }
 
-.april-section .month-header {
+.page18-april-section .page18-month-header {
     background-color: var(--april-color);
 }
 
-.may-section .month-header {
+.page18-may-section .page18-month-header {
     background-color: var(--may-color);
 }
 
-.june-section .month-header {
+.page18-june-section .page18-month-header {
     background-color: var(--june-color);
 }
 
-.month-title {
+.page18-month-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 1.8rem;
 }
 
-.month-content {
+.page18-month-content {
     border: 1px solid #ddd;
     border-top: none;
     border-bottom-left-radius: 5px;
@@ -158,39 +158,39 @@ strong {
     background-color: white;
 }
 
-.calendar-date {
+.page18-calendar-date {
     color: var(--dark-gray);
     font-size: 0.9rem;
 }
 
-.event-title {
+.page18-event-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.country-code {
+.page18-country-code {
     display: flex;
     align-items: center;
     font-size: 0.9rem;
 }
 
-.country-flag {
+.page18-country-flag {
     height: 16px;
     margin-left: 5px;
 }
 
-.event-description {
+.page18-event-description {
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
-.event-image {
+.page18-event-image {
     border: 1px solid #ddd;
     padding: 3px;
 }
 
-.april-call-out {
+.page18-april-call-out {
     position: relative;
     width: fit-content;
     color: var(--april-color);
@@ -203,7 +203,7 @@ strong {
     padding: 5px 15px;
 }
 
-.april-call-out:after {
+.page18-april-call-out:after {
     content: "";
     position: absolute;
     top: -15px;
@@ -215,14 +215,13 @@ strong {
     transform: rotate(-30deg);
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .calendar-title {
+    .page18-calendar-title {
         font-size: 2.5rem;
     }
-    
-    .event-title {
+
+    .page18-event-title {
         font-size: 1.3rem;
     }
 }
@@ -239,8 +238,7 @@ body:before {
     background-repeat: repeat-x;
     z-index: 10;
 }
-
-
+/* page-19 css style starts */
 /* page 19 colors */
 :root {
     --july-color: #e17f2f;
@@ -251,69 +249,72 @@ body:before {
     --december-color: #a86bb2;
 }
 
-.class_slide {
+.page19-class_slide {
     background-color: #ededed;
 }
 
 /* Workbook reference styling */
-.workbook-reference {
+.page19-workbook-reference {
     position: absolute;
     top: 10px;
     right: 30px;
     color: #666;
     font-size: 0.9rem;
 }
-.calendar-month {
+
+.page19-calendar-month {
     height: 100%;
     background-color: #ffffff;
 }
-.month-header {
+
+.page19-month-header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
 }
-.month-content {
+
+.page19-month-content {
     background-color: #ffffff;
 }
+
 /* Month header colors for second page */
-.july-section .month-header {
+.page19-july-section .page19-month-header {
     background-color: var(--july-color);
 }
 
-.august-section .month-header {
+.page19-august-section .page19-month-header {
     background-color: var(--august-color);
 }
 
-.september-section .month-header {
+.page19-september-section .page19-month-header {
     background-color: var(--september-color);
 }
 
-.october-section .month-header {
+.page19-october-section .page19-month-header {
     background-color: var(--october-color);
 }
 
-.november-section .month-header {
+.page19-november-section .page19-month-header {
     background-color: var(--november-color);
 }
 
-.december-section .month-header {
+.page19-december-section .page19-month-header {
     background-color: var(--december-color);
 }
 
 /* Image with orange border for ImPulsTanz */
-.border-orange {
+.page19-border-orange {
     border: 3px solid var(--july-color);
 }
 
 /* Adjust footer text to match image positioning */
-.page-number-right {
+.page19-page-number-right {
     text-align: right;
 }
 
-
 /* Reversed layout for certain events where image comes first */
 @media (min-width: 768px) {
-    .july-section .event-image {
+    .page19-july-section .page19-event-image {
         margin-right: 15px;
     }
 }
@@ -328,11 +329,111 @@ strong {
 
 /* Responsive adjustments for tighter layouts */
 @media (max-width: 992px) {
-    .event-title {
+    .page19-event-title {
         font-size: 1.3rem;
     }
-    
-    .event-description {
+
+    .page19-event-description {
         font-size: 0.9rem;
     }
 }
+/* Container */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Container responsive breakpoints */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  /* Row */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  /* Columns - Base styles */
+  [class*="col-"] {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /* Medium columns (md) - Grid system for screens ≥768px */
+  @media (min-width: 768px) {
+    .col-md-1 {
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+    .col-md-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-7 {
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+    }
+    .col-md-8 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    .col-md-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    .col-md-10 {
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+    .col-md-11 {
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%;
+    }
+    .col-md-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }

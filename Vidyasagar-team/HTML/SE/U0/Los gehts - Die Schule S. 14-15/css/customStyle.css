@@ -93,10 +93,13 @@ strong {
     margin-left: 10px;
 }
 
-/* page 14 styles  */
 
+
+
+
+/* page-14 css */
 /* Page title styles */
-.page-title {
+.page14-page-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 28px;
     color: var(--text-dark);
@@ -105,7 +108,7 @@ strong {
     align-items: center;
 }
 
-.title-underline {
+.page14-title-underline {
     background-color: var(--text-light);
     height: 13px;
     display: inline-block;
@@ -114,38 +117,38 @@ strong {
 }
 
 /* Vocabulary section styles */
-.vocabulary-section {
-    background-color: #e6f2f5; /* Light blue background */
+.page14-vocabulary-section {
+    background-color: #e6f2f5;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.audio-indicator {
+.page14-audio-indicator {
     position: absolute;
     top: 15px;
     left: 15px;
 }
 
-.audio-icon {
+.page14-audio-icon {
     font-size: 18px;
     color: var(--text-dark);
 }
 
 /* School items grid */
-.school-items-grid {
+.page14-school-items-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 10px;
 }
 
-.school-item {
+.page14-school-item {
     margin-bottom: 15px;
 }
 
-.item-image-container {
+.page14-item-image-container {
     background-color: white;
     border-radius: 5px 5px 0 0;
     height: 150px;
@@ -157,14 +160,14 @@ strong {
     overflow: hidden;
 }
 
-.item-image {
+.page14-item-image {
     max-width: 100%;
     max-height: 120px;
     object-fit: contain;
 }
 
-.item-name {
-    background-color: #05a5ba; /* Teal background for item names */
+.page14-item-name {
+    background-color: #05a5ba;
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -173,18 +176,18 @@ strong {
 }
 
 /* Activity container styles */
-.activity-container {
+.page14-activity-container {
     margin-bottom: 30px;
     position: relative;
 }
 
-.activity-header {
+.page14-activity-header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.activity-number {
+.page14-activity-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +201,7 @@ strong {
     font-size: 18px;
 }
 
-.activity-title {
+.page14-activity-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 18px;
     color: var(--text-light);
@@ -206,40 +209,40 @@ strong {
     margin: 0;
 }
 
-.activity-content {
+.page14-activity-content {
     padding-left: 50px;
 }
 
-.activity-icon-group {
+.page14-activity-icon-group {
     margin-bottom: 15px;
 }
 
-.activity-pair-icon {
+.page14-activity-pair-icon {
     font-size: 20px;
     color: var(--text-dark);
 }
 
-.activity-step {
+.page14-activity-step {
     margin-bottom: 5px;
     font-size: 16px;
 }
 
 /* Conversation example styles */
-.conversation-example {
+.page14-conversation-example {
     margin-top: 20px;
 }
 
-.speech-bubble {
+.page14-speech-bubble {
     position: relative;
     background-color: white;
-    border: 2px solid #e74c3c; /* Red border */
+    border: 2px solid #e74c3c;
     border-radius: 20px;
     padding: 10px 15px;
     display: inline-block;
     margin-bottom: 30px;
 }
 
-.speech-bubble:after {
+.page14-speech-bubble:after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -251,48 +254,48 @@ strong {
     width: 0;
 }
 
-.speech-bubble p {
+.page14-speech-bubble p {
     margin: 0;
-    color: #e74c3c; /* Red text */
+    color: #e74c3c;
     font-weight: 500;
 }
 
-.conversation-images {
+.page14-conversation-images {
     margin-top: 20px;
 }
 
-.conversation-row {
+.page14-conversation-row {
     display: flex;
     gap: 20px;
 }
 
-.conversation-image-container {
+.page14-conversation-image-container {
     flex: 1;
     position: relative;
 }
 
-.conversation-fig {
+.page14-conversation-fig {
     margin: 0 0 15px 0;
     padding: 0;
 }
 
-.conversation-image {
+.page14-conversation-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.speech-bubble-answer-1 {
+.page14-speech-bubble-answer-1 {
     position: relative;
     background-color: white;
-    border: 2px solid #3498db; /* Blue border */
+    border: 2px solid #3498db;
     border-radius: 20px;
     padding: 10px 15px;
     max-width: 80%;
 }
 
-.speech-bubble-answer-1:after {
+.page14-speech-bubble-answer-1:after {
     content: '';
     position: absolute;
     top: -15px;
@@ -304,22 +307,22 @@ strong {
     width: 0;
 }
 
-.speech-bubble-answer-1 p {
+.page14-speech-bubble-answer-1 p {
     margin: 0;
-    color: #3498db; /* Blue text */
+    color: #3498db;
     font-weight: 500;
 }
 
-.speech-bubble-answer-2 {
+.page14-speech-bubble-answer-2 {
     position: relative;
     background-color: white;
-    border: 2px solid #f39c12; /* Orange border */
+    border: 2px solid #f39c12;
     border-radius: 20px;
     padding: 10px 15px;
     max-width: 80%;
 }
 
-.speech-bubble-answer-2:after {
+.page14-speech-bubble-answer-2:after {
     content: '';
     position: absolute;
     top: -15px;
@@ -331,22 +334,22 @@ strong {
     width: 0;
 }
 
-.speech-bubble-answer-2 p {
+.page14-speech-bubble-answer-2 p {
     margin: 0;
-    color: #f39c12; /* Orange text */
+    color: #f39c12;
     font-weight: 500;
 }
 
 /* Vocabulary sidebar styles */
-.vocabulary-sidebar {
-    background-color: #f8edf5; /* Light purple background */
+.page14-vocabulary-sidebar {
+    background-color: #f8edf5;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 30px;
     border-left: 5px solid var(--vocab-purple);
 }
 
-.sidebar-title {
+.page14-sidebar-title {
     background-color: var(--vocab-purple);
     color: white;
     display: inline-block;
@@ -357,71 +360,74 @@ strong {
     border-radius: 0 5px 5px 0;
 }
 
-.sidebar-content {
+.page14-sidebar-content {
     padding: 0 10px;
 }
 
-.vocab-section-title {
+.page14-vocab-section-title {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
     color: var(--text-dark);
 }
 
-.vocab-translation {
+.page14-vocab-translation {
     font-weight: normal;
     font-style: italic;
     color: var(--text-light);
     font-size: 14px;
 }
 
-.vocab-list {
+.page14-vocab-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.vocab-item {
+.page14-vocab-item {
     margin-bottom: 8px;
     font-size: 14px;
 }
 
-.vocab-item p {
+.page14-vocab-item p {
     margin: 0;
 }
 
-.translation {
+.page14-translation {
     color: var(--text-light);
     font-style: italic;
     margin-top: 2px !important;
     font-size: 13px;
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .school-items-grid {
+    .page14-school-items-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .activity-content {
+
+    .page14-activity-content {
         padding-left: 0;
     }
-    
-    .conversation-row {
+
+    .page14-conversation-row {
         flex-direction: column;
     }
-    
-    .conversation-image-container {
+
+    .page14-conversation-image-container {
         margin-bottom: 30px;
     }
 }
 
 
-/* page 15 styles  */
 
+
+
+
+
+/* page-15 styling starts */
 /* Page header styles */
-.page-15 .page-header {
+.page15-page-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -429,14 +435,14 @@ strong {
     position: relative;
 }
 
-.page-15 .title-line {
+.page15-title-line {
     height: 13px;
     background-color: var(--text-light);
     flex-grow: 1;
     margin-right: 15px;
 }
 
-.page-15 .page-title {
+.page15-page-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 28px;
     color: var(--text-dark);
@@ -444,7 +450,7 @@ strong {
     white-space: nowrap;
 }
 
-.page-15 .workbook-info {
+.page15-workbook-info {
     font-size: 14px;
     color: var(--text-light);
     margin-left: 15px;
@@ -452,57 +458,57 @@ strong {
 }
 
 /* Vocabulary container and sections */
-.page-15 .vocabulary-container {
+.page15-vocabulary-container {
     display: flex;
     gap: 15px;
     margin-bottom: 30px;
 }
 
-.vocabulary-section {
+.page15-vocabulary-section {
     border-radius: 8px;
     padding: 10px;
     position: relative;
 }
 
-.people-section {
+.page15-people-section {
     flex: 1;
-    background-color: #e6eaf4; /* Light blue for people */
+    background-color: #e6eaf4;
 }
 
-.tech-section {
+.page15-tech-section {
     flex: 1;
-    background-color: #e6f4e8; /* Light green for tech */
+    background-color: #e6f4e8;
 }
 
-.classroom-section {
+.page15-classroom-section {
     flex: 1;
-    background-color: #e6f0f4; /* Light teal for classroom */
+    background-color: #e6f0f4;
 }
 
-.audio-indicator {
+.page15-audio-indicator {
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 1;
 }
 
-.audio-icon {
+.page15-audio-icon {
     font-size: 18px;
     color: var(--text-dark);
 }
 
 /* School items grid */
-.school-items-grid {
+.page15-school-items-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 
-.school-item {
+.page15-school-item {
     margin-bottom: 10px;
 }
 
-.item-image-container {
+.page15-item-image-container {
     background-color: white;
     border-radius: 5px 5px 0 0;
     height: 150px;
@@ -514,13 +520,13 @@ strong {
     overflow: hidden;
 }
 
-.item-image {
+.page15-item-image {
     max-width: 100%;
     max-height: 120px;
     object-fit: cover;
 }
 
-.item-name {
+.page15-item-name {
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -528,20 +534,20 @@ strong {
     border-radius: 0 0 5px 5px;
 }
 
-.teacher-label {
-    background-color: #1a4088; /* Dark blue for teachers/students */
+.page15-teacher-label {
+    background-color: #1a4088;
 }
 
-.tech-label {
-    background-color: #2c7d32; /* Dark green for technology */
+.page15-tech-label {
+    background-color: #2c7d32;
 }
 
-.classroom-label {
-    background-color: #217380; /* Teal for classroom items */
+.page15-classroom-label {
+    background-color: #217380;
 }
 
 /* Activity container styles */
-.activity-container {
+.page15-activity-container {
     background-color: #f7f7f7;
     border: 2px dotted #ccc;
     border-radius: 20px;
@@ -549,7 +555,7 @@ strong {
     position: relative;
 }
 
-.activity-header {
+.page15-activity-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -560,7 +566,7 @@ strong {
     padding: 10px 20px;
 }
 
-.activity-number {
+.page15-activity-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -574,7 +580,7 @@ strong {
     font-size: 18px;
 }
 
-.activity-title {
+.page15-activity-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 18px;
     color: var(--text-dark);
@@ -582,7 +588,7 @@ strong {
     margin: 0;
 }
 
-.game-icon {
+.page15-game-icon {
     position: absolute;
     right: 20px;
     top: 0;
@@ -596,75 +602,74 @@ strong {
     border: 2px solid var(--text-light);
 }
 
-.game-users-icon {
+.page15-game-users-icon {
     font-size: 20px;
     color: var(--text-dark);
 }
 
 /* Game instructions styles */
-.game-instructions {
+.page15-game-instructions {
     display: flex;
     gap: 20px;
     padding: 2rem;
 }
 
-.instruction-list {
+.page15-instruction-list {
     flex: 3;
     padding-left: 20px;
     margin-top: 0;
 }
 
-.instruction-list li {
+.page15-instruction-list li {
     margin-bottom: 10px;
     font-size: 16px;
 }
 
-.game-image-container {
+.page15-game-image-container {
     flex: 2;
 }
 
-.game-image-fig {
+.page15-game-image-fig {
     margin: 0;
     padding: 0;
 }
 
-.game-image {
+.page15-game-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     border: 1px solid #ddd;
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .vocabulary-container {
+    .page15-vocabulary-container {
         flex-direction: column;
     }
-    
-    .game-instructions {
+
+    .page15-game-instructions {
         flex-direction: column;
     }
-    
-    .game-image-container {
+
+    .page15-game-image-container {
         order: -1;
         margin-bottom: 20px;
     }
 }
 
 @media (min-width: 576px) {
-    .school-items-grid {
+    .page15-school-items-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 768px) {
-    .people-section .school-items-grid,
-    .classroom-section .school-items-grid {
+    .page15-people-section .page15-school-items-grid,
+    .page15-classroom-section .page15-school-items-grid {
         grid-template-columns: 1fr;
     }
-    
-    .tech-section .school-items-grid {
+
+    .page15-tech-section .page15-school-items-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
