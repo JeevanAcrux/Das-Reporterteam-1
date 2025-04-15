@@ -1,4 +1,4 @@
-/* page 19 colors */
+/* Page 19 Cultural Calendar CSS */
 :root {
     --july-color: #e17f2f;
     --august-color: #e6b62b;
@@ -10,6 +10,11 @@
 
 .class_slide {
     background-color: #ededed;
+    padding-top: 20px;
+}
+
+.page19-safe-area {
+    padding-top: 80px
 }
 
 /* Workbook reference styling */
@@ -20,21 +25,51 @@
     color: #666;
     font-size: 0.9rem;
 }
+
+/* Month card styling */
 .calendar-month {
     height: 100%;
     background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+
 .month-header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+    padding: 10px 15px;
 }
+
+.month-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 .month-content {
     background-color: #ffffff;
+    flex-grow: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-/* Month header colors for second page */
+
+/* Month header colors */
 .july-section .month-header {
     background-color: var(--july-color);
+    padding-left: 170px;
+}
+
+.july-header {
+    padding-left: 170px;
+
+}
+
+.july-text-container {
+    padding-top: 30px;
 }
 
 .august-section .month-header {
@@ -57,22 +92,126 @@
     background-color: var(--december-color);
 }
 
+/* Event container styling */
+.event-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Special layout for July and August cards to match PDF design */
+.july-layout, .august-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.july-layout {
+    flex-direction: row;
+}
+
+.august-layout {
+    flex-direction: row;
+}
+
+.july-layout .image-container {
+    flex: 0 0 200px;
+    position: absolute;
+    top: -31px;
+    left: -50px;
+    transform: rotate(350deg);
+}
+.august-layout .image-container figure {
+    flex: 0 0 200px;
+    position: absolute;
+    top: 47px;
+    right: -19px;
+    transform: rotate(2deg);
+}
+
+.september-image {
+        position: absolute;
+    top: -72px;
+    right: 10px;
+}
+
+.july-layout .image-container .event-image {
+    position: relative;
+}
+
+.july-layout .image-container .event-image img {
+}
+
+.august-layout .image-container {
+    flex: 0 0 200px;
+}
+
+.july-layout .text-container,
+.august-layout .text-container {
+    flex: 1;
+}
+
+.event-header {
+    margin-bottom: 10px;
+}
+
+/* Special styling for August image */
+.august-image {
+    border: 1px solid #e6b62b;
+}
+
+/* Calendar date styling */
+.calendar-date {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Event title styling */
+.event-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* Country code styling */
+.country-code {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.country-flag {
+    height: 20px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+/* Event description styling */
+.event-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Event image styling */
+.event-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.event-image img {
+    max-height: 180px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Image with orange border for ImPulsTanz */
 .border-orange {
     border: 3px solid var(--july-color);
-}
-
-/* Adjust footer text to match image positioning */
-.page-number-right {
-    text-align: right;
-}
-
-
-/* Reversed layout for certain events where image comes first */
-@media (min-width: 768px) {
-    .july-section .event-image {
-        margin-right: 15px;
-    }
 }
 
 /* Subtle background for special holiday terms */
@@ -83,13 +222,72 @@ strong {
     border-radius: 3px;
 }
 
-/* Responsive adjustments for tighter layouts */
-@media (max-width: 992px) {
+/* Page footer styling */
+.page-footer {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.page-number-left {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.page-number-right {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.page-number {
+    font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .event-image {
+        margin-bottom: 15px;
+    }
+    
     .event-title {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .event-description {
         font-size: 0.9rem;
+    }
+    
+    /* Keep images within their containers on mobile */
+    .event-image img {
+        max-height: 150px;
+        max-width: 100%;
+    }
+    
+    /* Stack July and August layouts on mobile */
+    .july-layout, .august-layout {
+        flex-direction: column;
+    }
+    
+    .july-layout .image-container,
+    .august-layout .image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 575.98px) {
+    .month-content {
+        padding: 10px !important;
+    }
+    
+    .event-title {
+        font-size: 1.1rem;
+    }
+    
+    .event-description {
+        font-size: 0.85rem;
     }
 }

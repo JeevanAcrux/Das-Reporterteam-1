@@ -44,6 +44,7 @@ em {
 
 body {
     font-family: 'Outfit' !important;
+    font-size: 22px;
 }
 
 strong {
@@ -300,6 +301,11 @@ body:before {
 
 .page19-december-section .page19-month-header {
     background-color: var(--december-color);
+}
+
+.page19-country-flag {
+    width: 30px;
+    margin-right: 10px;
 }
 
 /* Image with orange border for ImPulsTanz */
