@@ -1,0 +1,94 @@
+/* colors  */
+:root {
+    --primary-color: #78639b;
+    --primary-color-dark: #553f73;
+    --secondary-color: #127627;
+    --secondary-color-light: #e8f5e9;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --primary-purple: #78639b;
+    --highlight-green: #4caf50;
+    --highlight-yellow: #ffcc08;
+    --highlight-yellow-light: #fffbf3;
+    --text-white: #ffffff;
+    --background-light: #f5f5f5;
+    --primary-green: #4caf50;
+    --dark-green: #166534;
+    --speech-laura: #e8cef1;
+    --speech-jonas: #c8e4fa;
+    --speech-emir: #d8f2df;
+    --border-color: #dddddd;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --kultur-border: #8e4d65;
+    --light-purple: #e6e0f0;
+    --vocab-purple: #9c27b0;
+    --game-purple: #675589;
+    --background-light-yellow: #fbd9ca;
+    --background-light-gray: #ededed;
+}
+
+/* Setting lang attributes */
+[lang="de"] {
+    font-family: 'outfit', sans-serif;
+}
+
+[lang="en"] {
+    font-style: italic;
+}
+
+em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Outfit' !important;
+}
+
+strong {
+    font-weight: 900 !important;
+}
+
+.slider-control_1 {
+    position: fixed;
+    right: 0;
+}
+.main-content-area {
+    margin: 2rem 0;
+}
+/* typhography */
+.f-600 {
+    font-weight: 600;
+}
+
+/* Page footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.page-number-left {
+    text-align: left;
+}
+
+.page-number-left .page-number  {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+    margin-right: 10px;
+}
+
+.page-number-right {
+    text-align: right;
+}
+
+.page-number-right .page-number  {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    border-left: 2px solid #000;
+    margin-left: 10px;
+}
