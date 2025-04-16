@@ -1,7 +1,13 @@
 /* CSS for Page 17 - Los geht's! */
+p {
+    margin: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
 
 /* Page header styles */
-.page-header {
+.page17-page-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -9,14 +15,18 @@
     position: relative;
 }
 
-.title-line {
+.page17-page17-container {
+    padding: 35px;
+}
+
+.page17-title-line {
     height: 13px;
     background-color: var(--text-light);
     flex-grow: 1;
     margin-right: 15px;
 }
 
-.page-title {
+.page17-page-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 28px;
     color: var(--text-dark);
@@ -24,7 +34,7 @@
     white-space: nowrap;
 }
 
-.workbook-info {
+.page17-workbook-info {
     font-size: 14px;
     color: var(--text-light);
     margin-left: 15px;
@@ -32,25 +42,25 @@
 }
 
 /* Speech bubbles styles */
-.speech-bubbles-top-left {
+.page17-speech-bubbles-top-left {
     position: absolute;
     right: 0;
     top: -50px;
 }
 
-.speech-bubbles-middle-left {
+.page17-speech-bubbles-middle-left {
     position: absolute;
     right: 0;
     top: -50px;
 }
 
-.speech-bubbles-top-right {
+.page17-speech-bubbles-top-right {
     position: absolute;
     right: 0;
     top: -50px;
 }
 
-.speech-bubble {
+.page17-speech-bubble {
     position: relative;
     border-radius: 20px;
     padding: 10px 15px;
@@ -58,24 +68,24 @@
     max-width: 250px;
 }
 
-.speech-bubble p {
+.page17-speech-bubble p {
     margin: 0;
     font-weight: 500;
     color: white;
 }
 
-.speech-bubble:after {
+.page17-speech-bubble:after {
     content: '';
     position: absolute;
     display: block;
     width: 0;
 }
 
-.speech-bubble-blue {
-    background-color: #3b75bb; /* Blue bubble */
+.page17-speech-bubble-blue {
+    background-color: #3b75bb;
 }
 
-.speech-bubble-blue:after {
+.page17-speech-bubble-blue:after {
     bottom: -15px;
     left: 20px;
     border-width: 15px 15px 0;
@@ -83,11 +93,11 @@
     border-color: #3b75bb transparent transparent;
 }
 
-.speech-bubble-green {
-    background-color: #5e7f30; /* Green bubble */
+.page17-speech-bubble-green {
+    background-color: #5e7f30;
 }
 
-.speech-bubble-green:after {
+.page17-speech-bubble-green:after {
     bottom: -15px;
     right: 20px;
     border-width: 15px 15px 0;
@@ -95,11 +105,11 @@
     border-color: #5e7f30 transparent transparent;
 }
 
-.speech-bubble-red {
-    background-color: #c93a37; /* Red bubble */
+.page17-speech-bubble-red {
+    background-color: #c93a37;
 }
 
-.speech-bubble-red:after {
+.page17-speech-bubble-red:after {
     bottom: -15px;
     left: 20px;
     border-width: 15px 15px 0;
@@ -107,11 +117,11 @@
     border-color: #c93a37 transparent transparent;
 }
 
-.speech-bubble-orange {
-    background-color: #e67e22; /* Orange bubble */
+.page17-speech-bubble-orange {
+    background-color: #e67e22;
 }
 
-.speech-bubble-orange:after {
+.page17-speech-bubble-orange:after {
     top: -15px;
     right: 20px;
     border-width: 0 15px 15px;
@@ -120,13 +130,14 @@
 }
 
 /* Expressions container and columns */
-.expressions-container {
+.page17-expressions-container {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
 }
 
-.left-column, .right-column {
+.page17-left-column,
+.page17-right-column {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -134,61 +145,61 @@
 }
 
 /* Expression sections */
-.expression-section {
+.page17-expression-section {
     border-radius: 8px;
     position: relative;
     border: 1px solid #ddd;
     margin-bottom: 20px;
 }
 
-.expression-section .header {
+.page17-expression-section .page17-header {
     padding: 10px;
 }
 
-.polite-section {
+.page17-polite-section {
     margin-top: 3rem;
 }
 
-.polite-section .header {
-    background-color: #e8edf7; /* Light blue background */
+.page17-polite-section .page17-header {
+    background-color: #e8edf7;
 }
 
-.instructions-section {
+.page17-instructions-section {
     margin-top: 3rem;
 }
 
-.instructions-section .header {
-    background-color: #fce8e7; /* Light red background */
+.page17-instructions-section .page17-header {
+    background-color: #fce8e7;
 }
 
-.apology-section {
+.page17-apology-section {
     margin-top: 3rem;
 }
 
-.apology-section .header {
-    background-color: #eef2e7; /* Light green background */
+.page17-apology-section .page17-header {
+    background-color: #eef2e7;
 }
 
-.audio-indicator {
+.page17-audio-indicator {
     position: absolute;
-    top: 15px;
-    left: -35px;
+    top: 1px;
+    left: -18px;
     z-index: 1;
 }
 
-.audio-icon {
-    font-size: 18px;
-    color: var(--text-dark);
+.page17-audio-icon {
+    width: 25px;
+    height: 25px;
 }
 
-.section-title {
+.page17-section-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 18px;
     color: var(--text-dark);
     margin-bottom: 0;
 }
 
-.section-subtitle {
+.page17-section-subtitle {
     font-style: italic;
     color: var(--text-light);
     font-size: 14px;
@@ -196,29 +207,29 @@
 }
 
 /* Expression table styles */
-.expression-table {
+.page17-expression-table {
     border-collapse: collapse;
     width: 100%;
 }
 
-.expression-row {
+.page17-expression-row {
     border-top: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
 }
 
-.expression-row:last-child {
+.page17-expression-row:last-child {
     border-bottom: none;
 }
 
-.expression {
+.page17-expression {
     padding: 8px 0 2px 0;
     font-weight: 500;
     color: var(--text-dark);
 }
 
-.translation {
+.page17-translation {
     padding: 2px 0 8px 0;
     font-style: italic;
     color: var(--text-light);
@@ -226,24 +237,24 @@
 }
 
 /* Conversation image */
-.conversation-image-container {
+.page17-conversation-image-container {
     position: relative;
     margin-top: 40px;
 }
 
-.conversation-fig {
+.page17-conversation-fig {
     margin: 0;
     padding: 0;
 }
 
-.conversation-image {
+.page17-conversation-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     border: 1px solid #ddd;
 }
 
-.conversation-bubble-1 {
+.page17-conversation-bubble-1 {
     position: absolute;
     top: 20px;
     left: 30px;
@@ -251,7 +262,7 @@
     z-index: 1;
 }
 
-.conversation-bubble-2 {
+.page17-conversation-bubble-2 {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -260,17 +271,17 @@
 }
 
 /* Activity container styles */
-.activity-container {
+.page17-activity-container {
     margin-bottom: 30px;
 }
 
-.activity-header {
+.page17-activity-header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.activity-number {
+.page17-activity-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +295,7 @@
     font-size: 18px;
 }
 
-.activity-title {
+.page17-activity-title {
     font-family: 'outfit-bl', sans-serif;
     font-size: 18px;
     color: var(--text-light);
@@ -292,40 +303,40 @@
     margin: 0;
 }
 
-.activity-content {
+.page17-activity-content {
     padding-left: 50px;
 }
 
-.activity-step {
+.page17-activity-step {
     margin-bottom: 5px;
     font-size: 16px;
 }
 
-.activity-question {
+.page17-activity-question {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 16px;
 }
 
 /* Cafe image and sign */
-.cafe-image-container {
+.page17-cafe-image-container {
     margin-bottom: 30px;
     position: relative;
 }
 
-.cafe-image-fig {
+.page17-cafe-image-fig {
     margin: 0;
     padding: 0;
 }
 
-.cafe-image {
+.page17-cafe-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cafe-sign {
+.page17-cafe-sign {
     background-color: #222;
     color: white;
     padding: 20px;
@@ -341,20 +352,20 @@
     top: auto;
 }
 
-.sign-title {
+.page17-sign-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: 600;
 }
 
-.price-list {
+.page17-price-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.price-item {
+.page17-price-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -362,21 +373,20 @@
     padding-bottom: 10px;
 }
 
-.price-item:last-child {
+.page17-price-item:last-child {
     border-bottom: none;
 }
 
-.price-text {
+.page17-price-text {
     font-size: 16px;
 }
 
-.price {
+.page17-price {
     font-size: 20px;
     font-weight: 600;
 }
 
-
-.page-number-right .page-number {
+.page17-page-number-right .page17-page-number {
     font-size: 16px;
     font-weight: 700;
     padding-left: 10px;
@@ -386,18 +396,17 @@
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .expressions-container {
+    .page17-expressions-container {
         flex-direction: column;
     }
-    
-    .activity-content {
+
+    .page17-activity-content {
         padding-left: 15px;
     }
 }
 
 @media (max-width: 768px) {
-    .cafe-sign {
+    .page17-cafe-sign {
         max-width: 100%;
     }
 }
-
