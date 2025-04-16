@@ -503,6 +503,24 @@ strong {
     font-size: 18px;
     color: var(--text-dark);
 }
+.page15-audio-indicator-bottom {
+    position: absolute;
+    margin: 0;
+    z-index: 9;
+    top: 15px;
+    left: 15px;
+    margin-right: 10px;
+    color: var(--text-dark);
+    padding-left: 10px;
+    width: 30px;
+    height: 20px;
+    left: -16px;
+    top: -6px;
+}
+.page15-audio-icon-bottom {
+   width: 30px;
+    height: 30px;
+}
 
 /* School items grid */
 .page15-school-items-grid {
@@ -578,7 +596,9 @@ strong {
     align-items: center;
     justify-content: center;
     width: 36px;
+    min-width: 36px !important;
     height: 36px;
+    min-height: 36px !important;;
     background-color: var(--text-light);
     color: var(--text-white);
     border-radius: 50%;

@@ -38,7 +38,7 @@
 
 .vocabulary-section {
     border-radius: 8px;
-    padding: 10px;
+    padding: 30px;
     position: relative;
 }
 
@@ -62,6 +62,25 @@
     top: 10px;
     left: 10px;
     z-index: 1;
+}
+
+.page15-audio-indicator-bottom {
+    position: absolute;
+    margin: 0;
+    z-index: 9;
+    top: 15px;
+    left: 15px;
+    margin-right: 10px;
+    color: var(--text-dark);
+    padding-left: 10px;
+    width: 30px;
+    height: 20px;
+    left: -16px;
+    top: -6px;
+}
+.page15-audio-icon-bottom {
+   width: 30px;
+    height: 30px;
 }
 
 .audio-icon {
