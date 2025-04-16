@@ -1,0 +1,395 @@
+/* colors  */
+:root {
+    --primary-color: #78639b;
+    --primary-color-dark: #553f73;
+    --secondary-color: #127627;
+    --secondary-color-light: #e8f5e9;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --primary-purple: #78639b;
+    --highlight-green: #4caf50;
+    --highlight-yellow: #ffcc08;
+    --highlight-yellow-light: #fffbf3;
+    --text-white: #ffffff;
+    --background-light: #f5f5f5;
+    --primary-green: #4caf50;
+    --dark-green: #166534;
+    --speech-laura: #e8cef1;
+    --speech-jonas: #c8e4fa;
+    --speech-emir: #d8f2df;
+    --border-color: #dddddd;
+    --text-dark: #787676;
+    --text-light: #666666;
+    --kultur-border: #8e4d65;
+    --light-purple: #e6e0f0;
+    --vocab-purple: #9c27b0;
+    --game-purple: #675589;
+    --background-light-yellow: #fbd9ca;
+    --background-light-gray: #ededed;
+}
+
+/* Setting lang attributes */
+[lang="de"] {
+    font-family: 'outfit', sans-serif;
+}
+
+[lang="en"] {
+    font-style: italic;
+}
+
+em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Outfit' !important;
+    font-size: 22px;
+}
+
+strong {
+    font-weight: 900 !important;
+}
+
+.slider-control_1 {
+    position: fixed;
+    right: 0;
+}
+.main-content-area {
+    margin: 2rem 0;
+}
+/* typhography */
+.f-600 {
+    font-weight: 600;
+}
+
+/* Page footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.page-number-left {
+    text-align: left;
+}
+
+.page-number-left .page-number  {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+    margin-right: 10px;
+}
+
+.page-number-right {
+    text-align: right;
+}
+
+.page-number-right .page-number  {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    border-left: 2px solid #000;
+    margin-left: 10px;
+}
+
+/* page 12 styles  */
+
+/* Page title styles */
+.page-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.title-underline {
+    background-color: var(--text-dark);
+    height: 13px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.icon-title-below {
+    padding-left: 10px;
+    width: 41px;
+}
+
+/* Activity styles - Shared between pages */
+.activity-container {
+    margin-bottom: 30px;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.activity-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--text-light);
+    color: var(--text-white);
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.activity-title {
+    font-family: 'outfit-bl', sans-serif;
+    font-size: 18px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.activity-content,
+.activity-instructions {
+    /* margin-left: 50px; */
+    margin-bottom: 20px;
+}
+
+.activity-instructions p,
+.activity-step,
+.activity-question,
+.activity-prompt {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.activity-response {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Weather grid and cards */
+.weather-grid {
+    margin-left: 36px;
+    margin-right: 0;
+    gap: 25px 0;
+}
+
+.weather-card {
+    background-color: var(--background-light-gray);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    height: 100%;
+    min-height: 80px;
+}
+
+.top-weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-light-yellow);
+    border-radius: 10px;
+}
+
+.top-weather-card .weather-header {
+    color: #e30614;
+    font-size: 1.3rem;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.card-cold {
+    background-color: #cce3f3;
+}
+
+.top-weather-card .weather-icon {
+    position: relative;
+}
+.top-weather-card .weather-icon img {
+    width: 70px;
+
+}
+
+.weather-header {
+    color: #e74c3c; /* Warm red */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cold-header {
+    color: #3498db; /* Cool blue */
+}
+
+.temperature-display {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.temperature {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.fahrenheit {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.weather-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.weather-icon-img {
+    width: 40px;
+    height: auto;
+}
+
+.thermometer-icon {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    z-index: 1;
+}
+
+.thermometer-img {
+    width: 35px;
+    height: auto;
+}
+
+.weather-fig {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.weather-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* .weather-grid {
+        margin-left: 0;
+    } */
+    
+    .activity-instructions {
+        margin-left: 15px;
+    }
+    
+    .weather-card {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Container responsive breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Columns - Base styles */
+[class*="col-"] {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Medium columns (md) - Grid system for screens ≥768px */
+@media (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
