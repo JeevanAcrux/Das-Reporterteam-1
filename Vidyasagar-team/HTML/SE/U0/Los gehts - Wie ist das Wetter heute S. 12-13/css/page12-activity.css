@@ -28,19 +28,7 @@
     --background-light-gray: #ededed;
 }
 
-/* Setting lang attributes */
-[lang="de"] {
-    font-family: 'outfit', sans-serif;
-}
 
-[lang="en"] {
-    font-style: italic;
-}
-
-em {
-    font-style: italic;
-    font-weight: normal;
-}
 
 body {
     font-family: 'Outfit' !important;
@@ -63,56 +51,13 @@ strong {
     font-weight: 600;
 }
 
-/* Page footer */
-.page-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
+
 
 .page-number-left {
     text-align: left;
 }
 
-.page-number-left .page-number  {
-    font-size: 16px;
-    font-weight: 700;
-    padding-right: 10px;
-    border-right: 2px solid #000;
-    margin-right: 10px;
-}
 
-.page-number-right {
-    text-align: right;
-}
-
-.page-number-right .page-number  {
-    font-size: 16px;
-    font-weight: 700;
-    padding-left: 10px;
-    border-left: 2px solid #000;
-    margin-left: 10px;
-}
-
-/* page 12 styles  */
-
-/* Page title styles */
-.page-title {
-    font-family: 'outfit-bl', sans-serif;
-    font-size: 28px;
-    color: var(--text-dark);
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.title-underline {
-    background-color: var(--text-dark);
-    height: 13px;
-    display: inline-block;
-    flex-grow: 1;
-    margin-left: 15px;
-}
 
 .icon-title-below {
     padding-left: 10px;
