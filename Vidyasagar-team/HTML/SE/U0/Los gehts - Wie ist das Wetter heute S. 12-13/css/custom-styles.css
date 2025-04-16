@@ -107,7 +107,7 @@ strong {
 }
 
 .title-underline {
-    background-color: var(--text-light);
+    background-color: var(--text-dark);
     height: 13px;
     display: inline-block;
     flex-grow: 1;
@@ -174,7 +174,7 @@ strong {
 
 /* Weather grid and cards */
 .weather-grid {
-    margin-left: 50px;
+    margin-left: 36px;
     margin-right: 0;
     gap: 25px 0;
 }
@@ -199,7 +199,7 @@ strong {
 
 .top-weather-card .weather-header {
     color: #e30614;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     word-break: break-all;
 }
@@ -280,9 +280,9 @@ strong {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .weather-grid {
+    /* .weather-grid {
         margin-left: 0;
-    }
+    } */
     
     .activity-instructions {
         margin-left: 15px;
@@ -398,6 +398,11 @@ strong {
     font-size: 18px;
     margin-right: 10px;
     color: var(--text-dark);
+    padding-left: 10px;
+    width: 41px;
+    height: 29px;
+    position: absolute;
+    left: -55px;
 }
 
 .audio-header {
@@ -561,4 +566,105 @@ strong {
     .polaroid {
         margin-bottom: 20px;
     }
+}
+
+
+/* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Container responsive breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Columns - Base styles */
+[class*="col-"] {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Medium columns (md) - Grid system for screens ≥768px */
+@media (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
