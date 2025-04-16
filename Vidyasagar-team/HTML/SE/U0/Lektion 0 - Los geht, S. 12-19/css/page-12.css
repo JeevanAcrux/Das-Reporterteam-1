@@ -10,7 +10,7 @@
 
 .title-underline {
     background-color: var(--text-light);
-    height: 13px;
+    height: 37px;
     display: inline-block;
     flex-grow: 1;
     margin-left: 15px;
