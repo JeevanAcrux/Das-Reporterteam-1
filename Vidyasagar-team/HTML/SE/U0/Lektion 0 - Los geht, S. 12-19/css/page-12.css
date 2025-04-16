@@ -183,15 +183,14 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .weather-grid {
-        margin-left: 0;
+    
+    .class_slide {
+        padding: 20px 30px;
     }
     
-    .activity-instructions {
-        margin-left: 15px;
-    }
     
     .weather-card {
         margin-bottom: 15px;
+        flex-direction: column;
     }
 }

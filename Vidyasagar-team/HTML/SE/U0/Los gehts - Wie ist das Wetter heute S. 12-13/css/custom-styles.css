@@ -280,9 +280,9 @@ strong {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    /* .weather-grid {
+    .weather-grid {
         margin-left: 0;
-    } */
+    }
     
     .activity-instructions {
         margin-left: 15px;
