@@ -10,7 +10,7 @@
 
 .title-underline {
     background-color: var(--text-light);
-    height: 13px;
+    height: 37px;
     display: inline-block;
     flex-grow: 1;
     margin-left: 15px;
@@ -20,20 +20,70 @@
 .vocabulary-section {
     background-color: #e6f2f5; /* Light blue background */
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.audio-indicator {
+.page14-audio-indicator{
     position: absolute;
+    margin: 0;
+    z-index: 9;
     top: 15px;
     left: 15px;
+    margin-right: 10px;
+    color: var(--text-dark);
+    padding-left: 10px;
+    width: 41px;
+    height: 29px;
+    position: absolute;
+    left: -8px;
+    top: 3px;
 }
 
-.audio-icon {
-    font-size: 18px;
+.page14-audio-indicator-bottom {
+    position: absolute;
+    margin: 0;
+    z-index: 9;
+    top: 15px;
+    left: 15px;
+    margin-right: 10px;
     color: var(--text-dark);
+    padding-left: 10px;
+    width: 41px;
+    height: 29px;
+    left: -56px;
+    top: 66px;
+}
+
+.page14-audio-icon {
+   width: 33px;
+    height: 33px;
+}
+
+.page14-audio-icon-bottom {
+   width: 33px;
+    height: 33px;
+}
+
+.page14-activity-icon-group {
+    position: absolute;
+    margin: 0;
+    z-index: 9;
+    top: 15px;
+    left: 15px;
+    margin-right: 10px;
+    color: var(--text-dark);
+    padding-left: 10px;
+    width: 41px;
+    height: 29px;
+    left: -3px;
+    top: 23px;
+}
+
+.page14-activity-icon-group-img {
+    width: 33px;
+    height: 25px;
 }
 
 /* School items grid */
@@ -132,33 +182,6 @@
     margin-top: 20px;
 }
 
-.speech-bubble {
-    position: relative;
-    background-color: white;
-    border: 2px solid #e74c3c; /* Red border */
-    border-radius: 20px;
-    padding: 10px 15px;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-.speech-bubble:after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 20px;
-    border-width: 15px 15px 0;
-    border-style: solid;
-    border-color: #e74c3c transparent transparent;
-    display: block;
-    width: 0;
-}
-
-.speech-bubble p {
-    margin: 0;
-    color: #e74c3c; /* Red text */
-    font-weight: 500;
-}
 
 .conversation-images {
     margin-top: 20px;
@@ -181,7 +204,7 @@
 
 .conversation-image {
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     object-fit: cover;
     border-radius: 5px;
 }
@@ -244,38 +267,35 @@
 .vocabulary-sidebar {
     background-color: #f8edf5; /* Light purple background */
     border-radius: 8px;
-    padding: 15px;
     margin-bottom: 30px;
-    border-left: 5px solid var(--vocab-purple);
 }
 
 .sidebar-title {
     background-color: var(--vocab-purple);
     color: white;
-    display: inline-block;
-    padding: 5px 15px;
-    margin: -15px 0 15px -15px;
+    display: block;
+    padding: 10px 15px;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 0 5px 5px 0;
+    border-top-left-radius: 10px;
 }
 
 .sidebar-content {
-    padding: 0 10px;
+    padding: 15px;
 }
 
 .vocab-section-title {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--text-dark);
+    color: var(--vocab-purple);
 }
 
 .vocab-translation {
     font-weight: normal;
     font-style: italic;
     color: var(--text-light);
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .vocab-list {
@@ -286,25 +306,37 @@
 
 .vocab-item {
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .vocab-item p {
     margin: 0;
+    display: flex;
+}
+
+.vocab-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 14px;
 }
 
 .translation {
     color: var(--text-light);
     font-style: italic;
     margin-top: 2px !important;
-    font-size: 13px;
+    font-size: 22px;
+    margin-left: 22px !important;
 }
 
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .school-items-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .activity-content {
