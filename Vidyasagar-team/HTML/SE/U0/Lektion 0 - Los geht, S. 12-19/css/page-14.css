@@ -334,7 +334,7 @@
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .class_slide {
         padding: 15px;
     }
@@ -362,4 +362,5 @@
     .vocabulary-sidebar {
         margin-left: 51px;
     }
+
 }
