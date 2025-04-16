@@ -335,6 +335,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .class_slide {
+        padding: 15px;
+    }
     .school-items-grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -349,5 +352,14 @@
     
     .conversation-image-container {
         margin-bottom: 30px;
+    }
+    .page14-activity-content {
+        padding-left: 51px;
+    }
+    .conversation-example {
+        padding-left: 51px;
+    }
+    .vocabulary-sidebar {
+        margin-left: 51px;
     }
 }
