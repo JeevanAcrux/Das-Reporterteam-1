@@ -84,6 +84,12 @@
     background-color: var(--october-color);
 }
 
+.october-image {
+    transform: rotate(-365deg);
+}
+.november-image {
+    transform: rotate(365deg);
+}
 .november-section .month-header {
     background-color: var(--november-color);
 }
@@ -222,30 +228,9 @@ strong {
     border-radius: 3px;
 }
 
-/* Page footer styling */
-.page-footer {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-}
-
-.page-number-left {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.page-number-right {
-    text-align: right;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.page-number {
-    font-weight: 700;
-}
 
 /* Responsive adjustments */
-@media (max-width: 767.98px) {
+@media (max-width: 900px) {
     .event-image {
         margin-bottom: 15px;
     }
@@ -275,6 +260,40 @@ strong {
         width: 100%;
         margin-bottom: 10px;
     }
+    .july-section .month-header {
+        padding-left: 10px;
+    }
+    .july-header {
+        padding-left: 10px;
+    }
+    .july-layout .image-container {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 0;
+    }
+    .july-layout .image-container .event-image {
+        width: 100%;
+        display: block;
+    }
+    .july-layout .text-container, .august-layout .text-container {
+        padding-top: 0px;
+    }
+    .august-layout .image-container figure {
+        position: relative;
+        transform: none;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .august-layout  .image-container{
+        order: 1;
+    }
+    .august-layout  .text-container{
+        order: 2;
+    }
+
+
 }
 
 /* Small screens */
